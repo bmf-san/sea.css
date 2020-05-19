@@ -1,0 +1,50 @@
+{
+    "name": "sea.css",
+    "version": "1.0.0",
+    "description": "sea.css is a simple and easy to use css framework.",
+    "main": "dist/sea.min.css",
+    "directories": {
+        "doc": "docs"
+    },
+    "dependencies": {
+        "stylelint": "^13.5.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^9.8.0",
+        "cross-env": "^7.0.2",
+        "cssnano": "^4.1.10",
+        "npm-run-all": "^4.1.5",
+        "postcss-cli": "^7.1.1",
+        "postcss-csso": "^4.0.0",
+        "postcss-import": "^12.0.1",
+        "postcss-sorting": "^5.0.1",
+        "rimraf": "^3.0.2",
+        "stylelint-order": "^4.0.0"
+    },
+    "files": [
+        "src/",
+        "dist/",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "rimraf dist/* && npm-run-all postcss && cross-env NODE_ENV=production postcss ./src/sea.css --ext .min.css --dir=dist/ && gzip -c dist/sea.min.css | wc -c | xargs echo 'Size:'",
+        "postcss": "postcss ./src/sea.css -d dist/",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "css",
+        "simple",
+        "minimal",
+        "postcss"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bmf-san/sea.css.git"
+    },
+    "author": "bmf-san",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bmf-san/sea.css/issues"
+    },
+    "homepage": "https://github.com/bmf-san/sea.css#readme"
+}

@@ -1,0 +1,7 @@
+.sticky-footer {
+    background: var(--footer-color);
+    color: #fff;
+    display: flex;
+    width: 100%;
+    padding: 1.5rem 10%;
+}

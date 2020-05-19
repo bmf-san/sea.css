@@ -1,0 +1,23 @@
+.alert {
+    background-color: antiquewhite;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 1rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+.alert-success{
+    background: #A7F8CC;
+    color: #262424;
+}
+.alert-danger{
+    background: #F1A8A9;
+    color: #262424;
+}
+.alert-warning{
+    background: #FDEAAA;
+    color: #262424;
+}
+.alert-info{
+    background: #F4F4F4;
+    color:#262424;
+}
