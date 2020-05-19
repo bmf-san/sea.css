@@ -1,0 +1,15 @@
+@import "./base/_element.css";
+@import "./base/_container.css";
+@import "./component/_alert.css";
+@import "./component/_footer.css";
+@import "./component/_form.css";
+@import "./component/_header.css";
+@import "./component/_media.css";
+@import "./component/_pagination.css";
+@import "./component/_tag.css";
+@import "./util/_color.css";
+
+:root {
+    /* TODO: */
+    /* --main-color: blue; */
+}
