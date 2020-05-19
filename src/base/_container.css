@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.hero-container {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 80%;
+    height: 400px;
+}
+
+.row {
+   flex: 1;
+   padding: 0 10%;
+}
