@@ -1,0 +1,36 @@
+.pagination ul.pagination-list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.pagination .pagination-list li {
+    background: #ffffff;
+    border:solid 1px var(--main-color);
+    display: inline-block;
+    height: 40px;
+    margin: 0 2px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 40px;
+}
+.pagination .pagination-list li a {
+    color: var(--main-color);
+    display: table;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 0;
+    vertical-align: middle;
+    width: 100%;
+}
+.pagination .pagination-list li a span {
+    display: table-cell;
+    vertical-align: middle;
+}
+.pagination .pagination-list li a:hover, .pagination .pagination-list li a:hover {
+    background: var(--main-color);
+    color: #ffffff;
+}
