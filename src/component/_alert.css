@@ -4,3 +4,19 @@
     padding: 0.5rem;
     width: 100%;
 }
+.success{
+    background: #EBFCE6;
+    color: #53A214;
+}
+.danger{
+    background: #F4E6E8;
+    color: red;
+}
+.warning{
+    background: #F6F5D4;
+    color: #817322;
+}
+.info{
+    background: #E8F6FE;
+    color:#3380C7;
+}

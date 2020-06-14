@@ -5,14 +5,14 @@
 }
 
 .pagination .pagination-list li {
-    background: #9D50BB;
+    background: var(--main-color);
     display: inline-block;
-    height: 50px;
+    height: 40px;
     margin: 0 2px;
     padding: 0;
     position: relative;
     text-align: center;
-    width: 50px;
+    width: 40px;
 }
 
 .pagination .pagination-list li a {
