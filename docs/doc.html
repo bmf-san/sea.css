@@ -216,10 +216,11 @@ func main() {
 
                 <label for="email">Email</label>
                 <input class="form_input_btm form_inner" type="email" id="email" name="email">
-
-                <label for="search">Search</label>
-                <input class="form_input_btm form_inner" type="search" name="search" id="search">
-                <button class="search_button " type="submit">Search</button>
+                <div class="search">
+                    <label for="search">Search</label>
+                    <input class="form_inner" type="search" name="search" id="search">
+                    <button class="search_button" type="submit">Search</button>
+                </div>
 
                 <label for="password">Password</label>
                 <input class="form_input_btm form_inner" type="password" id="password" name="password">
@@ -253,22 +254,16 @@ func main() {
                     </label>
                 </div>
                 <label for="date">Date</label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" class="date">
 
                 <label for="datetime-local">Datetime-local</label>
-                <input type="datetime-local" id="datetime-local" name="datetime-local">
+                <input type="datetime-local" id="datetime-local" name="datetime-local" class="datetime-local">
 
                 <label for="file">File</label>
-                <div class="file">
-
+                <div class="upload-file">
                     <input type="file" id="file-date" class="file-upload_input">
-
                 </div>
-
-                <label for="number">Number</label>
-                <input type="number" id="number" name="number" min="1" max="5">
-
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="submit">
             </form>
 
             <hr>
@@ -298,12 +293,13 @@ func main() {
             <hr>
 
             <h1>Tag</h1>
-            <span class="tag">Lorem ipsum</span>
-            <span class="tag">Lorem ipsum</span>
-            <span class="tag">Lorem ipsum</span>
-            <span class="tag">Lorem ipsum</span>
-            <span class="tag">Lorem ipsum</span>
-
+            <div class="tag-group">
+                <a href="" class="tag"><span>Lorem ipsum</span></a>
+                <a href="" class="tag"><span>Lorem ipsum</span></a>
+                <a href="" class="tag"><span>Lorem ipsum</span></a>
+                <a href="" class="tag"><span>Lorem ipsum</span></a>
+                <a href="" class="tag"><span>Lorem ipsum</span></a>
+            </div>
             <hr>
 
             <h1>Pagination</h1>
@@ -322,16 +318,16 @@ func main() {
             <hr>
 
             <h1>Alert</h1>
-            <div class="alert">
+            <div class="alert success">
                 Success
             </div>
-            <div class="alert">
+            <div class="alert danger">
                 Danger
             </div>
-            <div class="alert">
+            <div class="alert warning">
                 Warning
             </div>
-            <div class="alert">
+            <div class="alert info">
                 Info
             </div>
 

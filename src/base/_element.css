@@ -88,7 +88,19 @@ dl dt {
 
 /* Tables */
 table {
-    background-color: #f6f6f6;
+    background-color: #CBCBCB;
+    border-spacing: 1px;
+}
+tr th{
+    padding: 0.5em 1em;
+    background: #f6f6f6;
+}
+tr th:last-child{
+    border-right: none;
+}
+tr td{
+    padding: 0.5em 1em;
+    background: #fff;
 }
 
 /* Lists */
@@ -128,38 +140,25 @@ img {
 button {
     border-color: skyblue;
 }
+.search input{
+    width: 60%;
+}
 .search_button{
     background: lightseagreen;
     color: #ffffff;
     height: 50px;
     margin-left: 0;
-    padding: 0 2em;
     font-size: 1em;
     border: none;
     cursor: pointer;
+    box-sizing: border-box;
+    width: 20%;
 }
 /* file */
-.file{
-    margin-bottom: 20px;
+.upload-file{
+    padding: 2em;
+    border: solid 1px #cccccc;
 }
 .file-upload_input{
-    position: relative;
-    padding: 10px 2em;
     border: none;
-}
-.file-upload_input::before {
-      background: #32a692;
-      color: #ffffff;
-      content: '+select file';
-      left: 0;
-      padding: 10px 0;
-      text-align: center;
-      width: 109px;
-      position: absolute;
-      top: 0;
-      font-size: 14px;
-    }
- 
-input[type="file"]:focus {
-    outline: 0;
 }
