@@ -5,7 +5,8 @@
 }
 
 .pagination .pagination-list li {
-    background: var(--main-color);
+    background: #ffffff;
+    border:solid 1px var(--main-color);
     display: inline-block;
     height: 40px;
     margin: 0 2px;
@@ -16,7 +17,7 @@
 }
 
 .pagination .pagination-list li a {
-    color: #fff;
+    color: var(--main-color);
     display: table;
     height: 100%;
     left: 0;
