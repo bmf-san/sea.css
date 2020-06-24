@@ -1,11 +1,11 @@
 .tag {
     display: inline-block;
-    padding: 0.5rem;
+    padding: 0.5rem 1.4rem;
     line-height: 1;
     display: inline-block;
-    background: #F4EEEB;
+    background: #ffffff;
     text-decoration: none;
     color: var(--main-color);
-    font-size: 14px;
-    margin-bottom: 5px;
+    border:var(--main-color) solid 0.1rem;
+    font-size: 1.4rem;
 }

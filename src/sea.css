@@ -11,5 +11,11 @@
 
 :root {
     /* TODO: */
-     --main-color: #449AAA; 
+    --main-text:Helvetica;
+    --sub-text:Futura;
+     --main-color: #21ADC7; 
+     --footer-color: #1F8699; 
+     --maintext-color: #262424; 
+     --subpoint-color: #647172; 
+
 }

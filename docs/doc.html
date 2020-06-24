@@ -38,14 +38,48 @@
             <h6>h6</h6>
 
             <hr>
-
+            <span class="tag">Lorem ipsum</span>
+            <span class="tag">Lorem ipsum</span>
             <h1>Paragraph</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ante arcu, lacinia non turpis at, ornare
-                ultricies
-                dolor. Fusce ornare purus at urna tristique vehicula. Quisque mattis tristique dolor, eget feugiat justo
-                efficitur sit
-                amet. Ut hendrerit purus ac dui hendrerit, placerat facilisis dui convallis. Donec pharetra rutrum
-                tempus. Morbi.</p>
+            <p class="article-date">2020.6.8</p>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd
+                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consetetur sadipscing
+                elitr, <mark>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</mark> sed
+                diam
+                voluptua. At vero eos et
+                accusam et <a href="#">justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</a>
+                sanctus est
+                Lorem
+                ipsum dolor sit
+                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Stet clita kasd
+                gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                consetetur sadipscing
+                elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                voluptua. At vero eos et
+                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                ipsum dolor sit
+                amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et
+                dolore magna aliquyam.</p>
+            <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
+            <div class="code-block">
+                <code>
+            package main
+            
+            import "fmt"
+            
+            func main() {
+                fmt.Println("Hello World")
+            }
+                            </code>
+            </div>
 
             <hr>
 
@@ -122,7 +156,7 @@
             <hr>
 
             <h1>Code block</h1>
-            <pre>
+            <div class="code-block">
                 <code>
 package main
 
@@ -132,7 +166,7 @@ func main() {
     fmt.Println("Hello World")
 }
                 </code>
-            </pre>
+            </div>
 
             <hr>
 
@@ -216,11 +250,10 @@ func main() {
 
                 <label for="email">Email</label>
                 <input class="form_input_btm form_inner" type="email" id="email" name="email">
-                <div class="search">
-                    <label for="search">Search</label>
-                    <input class="form_inner" type="search" name="search" id="search">
-                    <button class="search_button" type="submit">Search</button>
-                </div>
+
+                <label for="search">Search</label>
+                <input class="form_input_btm form_inner" type="search" name="search" id="search">
+                <button class="search_button " type="submit">Search</button>
 
                 <label for="password">Password</label>
                 <input class="form_input_btm form_inner" type="password" id="password" name="password">
@@ -254,16 +287,22 @@ func main() {
                     </label>
                 </div>
                 <label for="date">Date</label>
-                <input type="date" id="date" name="date" class="date">
+                <input type="date" id="date" name="date">
 
                 <label for="datetime-local">Datetime-local</label>
-                <input type="datetime-local" id="datetime-local" name="datetime-local" class="datetime-local">
+                <input type="datetime-local" id="datetime-local" name="datetime-local">
 
                 <label for="file">File</label>
-                <div class="upload-file">
+                <div class="file">
+
                     <input type="file" id="file-date" class="file-upload_input">
+
                 </div>
-                <input type="submit" value="Submit" class="submit">
+
+                <label for="number">Number</label>
+                <input type="number" id="number" name="number" min="1" max="5">
+
+                <input type="submit" value="Submit">
             </form>
 
             <hr>
@@ -293,13 +332,12 @@ func main() {
             <hr>
 
             <h1>Tag</h1>
-            <div class="tag-group">
-                <a href="" class="tag"><span>Lorem ipsum</span></a>
-                <a href="" class="tag"><span>Lorem ipsum</span></a>
-                <a href="" class="tag"><span>Lorem ipsum</span></a>
-                <a href="" class="tag"><span>Lorem ipsum</span></a>
-                <a href="" class="tag"><span>Lorem ipsum</span></a>
-            </div>
+            <span class="tag">Lorem ipsum</span>
+            <span class="tag">Lorem ipsum</span>
+            <span class="tag">Lorem ipsum</span>
+            <span class="tag">Lorem ipsum</span>
+            <span class="tag">Lorem ipsum</span>
+
             <hr>
 
             <h1>Pagination</h1>
@@ -318,16 +356,16 @@ func main() {
             <hr>
 
             <h1>Alert</h1>
-            <div class="alert success">
+            <div class="alert">
                 Success
             </div>
-            <div class="alert danger">
+            <div class="alert">
                 Danger
             </div>
-            <div class="alert warning">
+            <div class="alert">
                 Warning
             </div>
-            <div class="alert info">
+            <div class="alert">
                 Info
             </div>
 

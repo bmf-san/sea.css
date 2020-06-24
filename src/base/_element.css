@@ -5,11 +5,11 @@
 html {
     background-color: #ffffff;
     box-sizing: border-box;
-    color: #333333;
+    color: var(--maintext-color);
     font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 1em;
+    font-size: 62.5%;
     height: 100%;
-    line-height: 1.6;
+    line-height: 1.62em;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -20,16 +20,18 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    font: 1.8rem Helvetica;
+    line-height: 2.8rem;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-weight: 500;
     margin: 0.8em 0 0.6em 0;
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 
 h2 {
@@ -54,19 +56,22 @@ h6 {
 
 /* Paragraphs */
 p {
-    font-size: 1em;
     font-weight: 400;
     margin: 0.3em 0 0.6em 0;
 }
 
 /* Inline text elements */
-mark {}
+.article-date{
+   color: var(--subpoint-color);
+   font-size: 1.6rem;
+}
+mark {background-color:#D2FA92;}
 
 del {}
 
 u {}
 
-small {}
+small {font-size: 1.4rem;}
 
 strong {}
 
@@ -74,11 +79,11 @@ em {}
 
 i {}
 
-b {}
+b {font: bold;}
 
 /* Anchor */
 a {
-    color: skyblue;
+    color: var(--main-color);
 }
 
 /* Definitions */
@@ -114,19 +119,23 @@ li {
 
 /* Blockquote */
 blockquote {
-    background-color: gainsboro;
-    padding: 1rem 1.5rem;
+    background-color: #F4F4F4;
+    padding: 2rem;
+    font: Oblique lighter 1.4rem Helvetica;
 }
 
 /* Code blocks */
-pre {
-    background: #f6f6f6;
-    padding: 1rem;
+.code-block {
+    background: #EAF2F4;
+    padding: 2rem;
+}
+code{
+    font: 1.4rem;
 }
 
 /* hr */
 hr {
-    color: #989291;
+    color: var(--subpoint-color);
 }
 
 /* Images */
@@ -144,7 +153,7 @@ button {
     width: 60%;
 }
 .search_button{
-    background: lightseagreen;
+    background:var(--main-color);
     color: #ffffff;
     height: 50px;
     margin-left: 0;

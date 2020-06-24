@@ -35,6 +35,6 @@
 }
 
 .pagination .pagination-list li a:hover, .pagination .pagination-list li a:hover {
-    background: #ccf;
-    color: #000;
+    background: var(--main-color);
+    color: #ffffff;
 }
