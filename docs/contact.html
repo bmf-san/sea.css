@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../src/sea.css">
+    <link rel="stylesheet" href="../src/component/_form.css">
 </head>
 
 <body>
@@ -20,50 +21,53 @@
         </nav>
     </header>
 
-    <div class="hero-container">
-        <div class="row">
-            <img src="./image/sea.JPG" alt="image" style="height: 400px;">
-        </div>
-    </div>
+
 
     <div class="container">
         <div class="row">
             <div class="alert">
                 Success
             </div>
-
-            <h1>Form</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt illum similique sit accusantium ducimus nisi, voluptatum dolore quod quibusdam recusandae provident, doloremque voluptatem tenetur quae enim temporibus maiores! Culpa, aliquam?</p>
+            <div class="contact">
+                <h1>Form</h1>
                 <form action="#">
-                    <label for="name">Name</label><br>
-                    <input type="text" id="name" name="name" value="name"><br>
-
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="osiritantei">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="search">Search</label>
-                    <input type="search" name="search" id="search">
-                    <button type="submit">Search</button>
-
+                    <input type="email" id="email" name="email" placeholder="example.com">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password">
-
                     <label for="textarea">Textarea</label>
                     <textarea name="textarea" id="" cols="30" rows="10"></textarea>
-
-                    <input type="radio" id="radio" name="radio" value="radio">
-                    <label for="radio">Radio</label><br>
-                    <input type="radio" id="radio" name="radio" value="radio">
-                    <label for="radio">Radio</label><br>
-                    <input type="radio" id="radio" name="radio" value="radio">
-                    <label for="radio">Radio</label>
-
-                    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
-                    <label for="checkbox">Checkbox</label><br>
-                    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
-                    <label for="checkbox">Checkbox</label><br>
-                    <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
-                    <label for="checkbox">Checkbox</label><br>
+                    <div class="radio">
+                        <input type="radio" id="radio1" class="radio-input" name="radio" value="radio">
+                        <label for="radio1" class="radio-label">Radio</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="radio2" class="radio-input" name="radio" value="radio">
+                        <label for="radio2" class="radio-label">Radio</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" id="radio3" class="radio-input" name="radio" value="radio">
+                        <label for="radio3" class="radio-label">Radio</label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
+                                value="checkbox">
+                            <span class="check-label">Checkbox1</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
+                                value="checkbox">
+                            <span for="checkbox" class="check-label">Checkbox2</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
+                                value="checkbox">
+                            <span for="checkbox" class="check-label">Checkbox3</span>
+                        </label>
+                    </div>
 
                     <label for="date">Date</label>
                     <input type="date" id="date" name="date">
@@ -72,13 +76,14 @@
                     <input type="datetime-local" id="datetime-local" name="datetime-local">
 
                     <label for="file">File</label>
-                    <input type="file" id="file" name="file">
+                    <input type="file" id="file" name="file" class="file">
 
                     <label for="number">Number</label>
                     <input type="number" id="number" name="number" min="1" max="5">
 
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" class="submit-button">
                 </form>
+            </div>
         </div>
     </div>
 

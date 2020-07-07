@@ -2,7 +2,7 @@
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     max-width: 100%;
 }
 
