@@ -16,10 +16,6 @@ form input:focus, textarea:focus{
 form input-selected{
     background: #fff;
 }
-.contact{
-    max-width: 50rem;
-    margin: auto;
-}
 .form_inner{
     padding: 1em;
 }

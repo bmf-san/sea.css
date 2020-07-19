@@ -1,15 +1,26 @@
 .nav {
     display: flex;
     flex-wrap: wrap;
-    border-bottom: solid 1px #333333;
+    padding: 2rem 0;
 }
 
 .nav-link-logo {
     display: flex;
     flex: 1;
+    margin-left: 4.5rem;
 }
 
 .nav-link {
     display: flex;
     flex: none;
+    text-decoration: none;
+    color: var( --maintext-color);
+    font-size: 2rem;
+    border-bottom: solid 0.2rem var(--border-color);
+    margin-right: 4.5rem;
+    height: 4.5rem;
+    padding-top: 1.4rem;
+}
+.nav-link:hover{
+    border-bottom: solid 0.2rem var(--main-color);
 }

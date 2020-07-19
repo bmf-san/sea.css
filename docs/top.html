@@ -11,13 +11,20 @@
 <body>
     <header>
         <nav class="nav">
-            <a class="nav-link-logo">Logo</span>
+            <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></span>
                 <a class="nav-link" href="doc.html">Doc</a>
                 <a class="nav-link" href="top.html">Top</a>
                 <a class="nav-link" href="list.html">List</a>
                 <a class="nav-link" href="article.html">Article</a>
                 <a class="nav-link" href="contact.html">Contact</a>
         </nav>
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="mask"></div>
     </header>
 
     <div class="hero-container">
@@ -28,23 +35,43 @@
 
     <div class="container">
         <div class="row">
-            <h1>Lorem Ipsum</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt possimus consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam voluptatibus cumque libero minus deleniti.</p>
+            <div class="column">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
+                    possimus
+                    consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
+                    voluptatibus
+                    cumque libero minus deleniti.</p>
+            </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia facere consectetur quas omnis temporibus. In similique magni, aspernatur quo optio architecto quis adipisci pariatur voluptas esse porro sapiente modi aliquid.</p>
-        </div>
-        <div class="row">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia facere consectetur quas omnis temporibus. In similique magni, aspernatur quo optio architecto quis adipisci pariatur voluptas esse porro sapiente modi aliquid.</p>
-        </div>
-        <div class="row">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia facere consectetur quas omnis temporibus. In similique magni, aspernatur quo optio architecto quis adipisci pariatur voluptas esse porro sapiente modi aliquid.</p>
+            <div class="col">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia facere consectetur quas omnis
+                    temporibus.
+                    In similique magni, aspernatur quo optio architecto quis adipisci pariatur voluptas esse porro
+                    sapiente
+                    modi aliquid.</p>
+            </div>
+            <div class="col">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia facere consectetur quas omnis
+                    temporibus.
+                    In similique magni, aspernatur quo optio architecto quis adipisci pariatur voluptas esse porro
+                    sapiente
+                    modi aliquid.</p>
+            </div>
+            <div class="col">
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia facere consectetur quas omnis
+                    temporibus.
+                    In similique magni, aspernatur quo optio architecto quis adipisci pariatur voluptas esse porro
+                    sapiente
+                    modi aliquid.</p>
+            </div>
         </div>
     </div>
 
@@ -53,19 +80,32 @@
             <div class="media">
                 <div class="media-column">
                     <img class="media-img" src="./image/sea.JPG" alt="media image" style="width: 50px; height: 50px;">
-                    <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel, delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam dolores exercitationem odio cum. Consectetur, harum et!</p>
+                    <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel,
+                        delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam dolores
+                        exercitationem odio cum. Consectetur, harum et!</p>
                 </div>
                 <div class="media-column">
                     <img class="media-img" src="./image/sea.JPG" alt="media image" style="width: 50px; height: 50px;">
-                    <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel, delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam dolores exercitationem odio cum. Consectetur, harum et!</p>
+                    <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel,
+                        delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam dolores
+                        exercitationem odio cum. Consectetur, harum et!</p>
                 </div>
             </div>
         </div>
     </div>
-  
 
-    <footer class="sticky-footer">
-        <span>SEA.css is licensed MIT.</span>
+
+    <footer class="sticky-footer" style="margin-top: 3rem;">
+        <div class="container" style="padding: 1rem 10%;">
+            <div
+                style="width: 100%;　flex-direction: row; display: flex; justify-content:center; border-bottom: solid 1px #fff; margin: 0 auto;">
+                <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">contents</a></p>
+                <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">contact</a></p>
+                <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">menu</a></p>
+            </div>
+            <p style=" font-size: 1.5rem; margin: 0 auto; display: block;"><small>SEA.css is
+                    licensed MIT.</small></p>
+        </div>
     </footer>
 </body>
 
