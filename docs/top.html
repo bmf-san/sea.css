@@ -10,32 +10,41 @@
 
 <body>
     <header>
-        <nav class="nav">
-            <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></span>
+        <div>
+            <nav class="nav sp-hidden">
+                <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
                 <a class="nav-link" href="doc.html">Doc</a>
                 <a class="nav-link" href="top.html">Top</a>
                 <a class="nav-link" href="list.html">List</a>
                 <a class="nav-link" href="article.html">Article</a>
                 <a class="nav-link" href="contact.html">Contact</a>
-        </nav>
-        <div class="toggle_btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <div id="mask"></div>
+            </nav>
+            <nav class="nav pc-hidden">
+                <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
+                <div id="nav-sp-drawer">
+                    <input id="nav-sp-input" type="checkbox" class="nav-sp-unshown">
+                    <label id="nav-sp-open" for="nav-sp-input"><span></span></label>
+                    <label class="nav-sp-unshown" id="nav-sp-close" for="nav-sp-input"></label>
+                    <div id="nav-sp-content">
+                        <a class="nav-link" href="doc.html">Doc</a>
+                        <a class="nav-link" href="top.html">Top</a>
+                        <a class="nav-link" href="list.html">List</a>
+                        <a class="nav-link" href="article.html">Article</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
     </header>
 
-    <div class="hero-container">
-        <div class="row">
+    <div class="full-containerr">
+        <div>
             <img src="./image/sea.JPG" alt="image" style="height: 400px;">
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="column">
+            <div class="col">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
                     possimus
@@ -72,6 +81,7 @@
                     sapiente
                     modi aliquid.</p>
             </div>
+
         </div>
     </div>
 
@@ -96,7 +106,7 @@
 
 
     <footer class="sticky-footer" style="margin-top: 3rem;">
-        <div class="container" style="padding: 1rem 10%;">
+        <div class="container">
             <div
                 style="width: 100%;　flex-direction: row; display: flex; justify-content:center; border-bottom: solid 1px #fff; margin: 0 auto;">
                 <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">contents</a></p>

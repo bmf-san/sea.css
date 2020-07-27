@@ -1,22 +1,23 @@
 .alert {
     background-color: antiquewhite;
     margin-bottom: 0.5rem;
-    padding: 0.5rem;
+    padding: 1.5rem 1rem;
     width: 100%;
+    font-size: 1.6rem;
 }
 .success{
-    background: #EBFCE6;
-    color: #53A214;
+    background: #A7F8CC;
+    color: #262424;
 }
 .danger{
-    background: #F4E6E8;
-    color: red;
+    background: #F1A8A9;
+    color: #262424;
 }
 .warning{
-    background: #F6F5D4;
-    color: #817322;
+    background: #FDEAAA;
+    color: #262424;
 }
 .info{
-    background: #E8F6FE;
-    color:#3380C7;
+    background: #F4F4F4;
+    color:#262424;
 }
