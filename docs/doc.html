@@ -37,15 +37,16 @@
             </nav>
     </header>
 
-    <!-- TODO: bootstrapのjumbotronを参考にfull-containerrのスタイルを調整。高さが固定かいい感じになっているはず -->
-    <div class="full-containerr" style="background-image: url('./image/sea.JPG');">
-        <div class=" row">
-            <div class="col">
-                <h1>Hero</h1>
+    <!-- TODO: bootstrapのjumbotronを参考にheadlineのスタイルを調整。高さが固定かいい感じになっているはず -->
+    <div class="headline" style="background-image: url('./image/sea.JPG');">
+        <div class="container">
+            <div class=" row">
+                <div class="col">
+                    <h1>Headline</h1>
+                </div>
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
             <div class="col">
@@ -53,7 +54,8 @@
             </div>
         </div>
     </div>
-    <div class="full-containerr" style="background-image: url('./image/sea.JPG');">
+    <!-- TODO: bootstrapのjumbotronを参考にheadlineのスタイルを調整。高さが固定かいい感じになっているはず -->
+    <div class="headline" style="background-image: url('./image/sea.JPG');">
         <!-- TODO: 文字が入れられると嬉しい -->
     </div>
     <div class="container">
@@ -345,7 +347,7 @@ func main() {
         </div>
     </div>
     <footer class="sticky-footer">
-        <div class="full-containerr">
+        <div class="headline">
             <div class="row">
                 <div class="col">
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio animi enim impedit vitae
@@ -358,185 +360,198 @@ func main() {
     </footer>
 
     <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="column" style="max-width: 50rem; margin:0 auto; justify-content:center;">
+                    <h1>Form</h1>
+                    <form action="#">
+                        <label for="name">Name</label>
+                        <input class="form_input_btm form_inner" type="text" id="name" name="name" value=""
+                            placeholder="First name">
 
-    <div class="row">
-        <div class="col">
-            <div class="column" style="max-width: 50rem; margin:0 auto; justify-content:center;">
-                <h1>Form</h1>
-                <form action="#">
-                    <label for="name">Name</label>
-                    <input class="form_input_btm form_inner" type="text" id="name" name="name" value=""
-                        placeholder="First name">
+                        <label for="email">Email</label>
+                        <input class="form_input_btm form_inner" type="email" id="email" name="email">
 
-                    <label for="email">Email</label>
-                    <input class="form_input_btm form_inner" type="email" id="email" name="email">
+                        <label for="search">Search</label>
+                        <input class="form_input_btm form_inner" type="search" name="search" id="search">
+                        <button class="search_button " type="submit">Search</button>
 
-                    <label for="search">Search</label>
-                    <input class="form_input_btm form_inner" type="search" name="search" id="search">
-                    <button class="search_button " type="submit">Search</button>
+                        <label for="password">Password</label>
+                        <input class="form_input_btm form_inner" type="password" id="password" name="password">
 
-                    <label for="password">Password</label>
-                    <input class="form_input_btm form_inner" type="password" id="password" name="password">
+                        <label for="textarea">Textarea</label>
+                        <textarea class="form_input_btm form_inner" name="textarea" id="" cols="113"
+                            rows="10"></textarea>
+                        <div class="radio">
+                            <input type="radio" id="radio" class="radio-input" name="radio" value="radio">
+                            <label for="radio" class="radio-label">Radio</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="radio2" class="radio-input" name="radio" value="radio">
+                            <label for="radio2" class="radio-label">Radio</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="radio3" class="radio-input" name="radio" value="radio">
+                            <label for="radio3" class="radio-label">Radio</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
+                                    value="checkbox">
+                                <span class="check-label">Checkbox1</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
+                                    value="checkbox">
+                                <span for="checkbox" class="check-label">Checkbox2</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
+                                    value="checkbox">
+                                <span for="checkbox" class="check-label">Checkbox3</span>
+                            </label>
+                        </div>
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date">
 
-                    <label for="textarea">Textarea</label>
-                    <textarea class="form_input_btm form_inner" name="textarea" id="" cols="113" rows="10"></textarea>
-                    <div class="radio">
-                        <input type="radio" id="radio" class="radio-input" name="radio" value="radio">
-                        <label for="radio" class="radio-label">Radio</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" id="radio2" class="radio-input" name="radio" value="radio">
-                        <label for="radio2" class="radio-label">Radio</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" id="radio3" class="radio-input" name="radio" value="radio">
-                        <label for="radio3" class="radio-label">Radio</label>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
-                                value="checkbox">
-                            <span class="check-label">Checkbox1</span>
-                        </label>
-                        <label>
-                            <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
-                                value="checkbox">
-                            <span for="checkbox" class="check-label">Checkbox2</span>
-                        </label>
-                        <label>
-                            <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
-                                value="checkbox">
-                            <span for="checkbox" class="check-label">Checkbox3</span>
-                        </label>
-                    </div>
-                    <label for="date">Date</label>
-                    <input type="date" id="date" name="date">
+                        <label for="datetime-local">Datetime-local</label>
+                        <input type="datetime-local" id="datetime-local" name="datetime-local">
 
-                    <label for="datetime-local">Datetime-local</label>
-                    <input type="datetime-local" id="datetime-local" name="datetime-local">
+                        <label for="file">File</label>
+                        <input type="file" id="file" name="file" class="file">
 
-                    <label for="file">File</label>
-                    <input type="file" id="file" name="file" class="file">
+                        <label for="number">Number</label>
+                        <input type="number" id="number" name="number" min="1" max="5">
 
-                    <label for="number">Number</label>
-                    <input type="number" id="number" name="number" min="1" max="5">
-
-                    <input type="submit" value="Submit" class="submit-button">
-                </form>
-            </div>
-            <hr>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <h1>Media</h1>
-            <div class="media">
-                <div class="media-column">
-                    <img class="media-img" src="./image/sea.JPG" alt="media image" style="width: 50px; height: 50px;">
-                    <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel,
-                        delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam dolores
-                        exercitationem odio cum. Consectetur, harum et!</p>
+                        <input type="submit" value="Submit" class="submit-button">
+                    </form>
                 </div>
-                <div class="media-column">
-                    <img class="media-img" src="./image/sea.JPG" alt="media image" style="width: 50px; height: 50px;">
-                    <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel,
-                        delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam dolores
-                        exercitationem odio cum. Consectetur, harum et!</p>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Media</h1>
+                <div class="media">
+                    <div class="media-column">
+                        <img class="media-img" src="./image/sea.JPG" alt="media image"
+                            style="width: 50px; height: 50px;">
+                        <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel,
+                            delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam dolores
+                            exercitationem odio cum. Consectetur, harum et!</p>
+                    </div>
+                    <div class="media-column">
+                        <img class="media-img" src="./image/sea.JPG" alt="media image"
+                            style="width: 50px; height: 50px;">
+                        <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel,
+                            delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam dolores
+                            exercitationem odio cum. Consectetur, harum et!</p>
+                    </div>
+                    <div class="media-column">
+                        <img class="media-img" src="./image/sea.JPG" alt="media image"
+                            style="width: 50px; height: 50px;">
+                        <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel,
+                            delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam dolores
+                            exercitationem odio cum. Consectetur, harum et!</p>
+                    </div>
                 </div>
-                <div class="media-column">
-                    <img class="media-img" src="./image/sea.JPG" alt="media image" style="width: 50px; height: 50px;">
-                    <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel,
-                        delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam dolores
-                        exercitationem odio cum. Consectetur, harum et!</p>
+
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Tag</h1>
+                <span class="tag">Lorem ipsum</span>
+                <span class="tag">Lorem ipsum</span>
+                <span class="tag">Lorem ipsum</span>
+                <span class="tag">Lorem ipsum</span>
+                <span class="tag">Lorem ipsum</span>
+
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Pagination</h1>
+                <div class="pagination">
+                    <ul class="pagination-list">
+                        <li class="pagination-pre"><a href="#"><span>«</span></a></li>
+                        <li><a href="#"><span>1</span></a></li>
+                        <li><a href="#"><span>2</span></a></li>
+                        <li><a href="#"><span>3</span></a></li>
+                        <li><a href="#"><span>4</span></a></li>
+                        <li><a href="#"><span>5</span></a></li>
+                        <li class="pagination-next"><a href="#"><span>»</span></a></li>
+                    </ul>
                 </div>
-            </div>
 
-            <hr>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <h1>Tag</h1>
-            <span class="tag">Lorem ipsum</span>
-            <span class="tag">Lorem ipsum</span>
-            <span class="tag">Lorem ipsum</span>
-            <span class="tag">Lorem ipsum</span>
-            <span class="tag">Lorem ipsum</span>
-
-            <hr>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <h1>Pagination</h1>
-            <div class="pagination">
-                <ul class="pagination-list">
-                    <li class="pagination-pre"><a href="#"><span>«</span></a></li>
-                    <li><a href="#"><span>1</span></a></li>
-                    <li><a href="#"><span>2</span></a></li>
-                    <li><a href="#"><span>3</span></a></li>
-                    <li><a href="#"><span>4</span></a></li>
-                    <li><a href="#"><span>5</span></a></li>
-                    <li class="pagination-next"><a href="#"><span>»</span></a></li>
-                </ul>
+                <hr>
             </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Alert</h1>
+                <div class="alert success">
+                    Success
+                </div>
+                <div class="alert danger">
+                    Danger
+                </div>
+                <div class="alert warning">
+                    Warning
+                </div>
+                <div class="alert info">
+                    Info
+                </div>
 
-            <hr>
+                <hr>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <h1>Alert</h1>
-            <div class="alert success">
-                Success
-            </div>
-            <div class="alert danger">
-                Danger
-            </div>
-            <div class="alert warning">
-                Warning
-            </div>
-            <div class="alert info">
-                Info
-            </div>
+        <div class="row">
+            <div class="col">
+                <h1>Color</h1>
+                <!-- TODO: -->
 
-            <hr>
+                <hr>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <h1>Color</h1>
-            <!-- TODO: -->
+        <div class="row">
+            <div class="col">
+                <h1>Size</h1>
+                <!-- TODO: -->
 
-            <hr>
+                <hr>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <h1>Size</h1>
-            <!-- TODO: -->
-
-            <hr>
+        <div class="row">
+            <div class="col">
+                <h1>Spacing</h1>
+                <!-- TODO: -->
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <h1>Spacing</h1>
-            <!-- TODO: -->
-        </div>
-    </div>
     </div>
 
     <footer class="sticky-footer" style="margin-top: 3rem;">
-        <div class="container">
-            <div
-                style="width: 100%;　flex-direction: row; display: flex; justify-content:center; border-bottom: solid 1px #fff; margin: 0 auto;">
-                <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">contents</a></p>
-                <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">contact</a></p>
-                <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">menu</a></p>
+        <div class="headline">
+            <div class="row">
+                <div class="col">
+                    <div
+                        style="width: 100%;　flex-direction: row; display: flex; justify-content:center; border-bottom: solid 1px #fff; margin: 0 auto;">
+                        <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;"
+                                href="">contents</a>
+                        </p>
+                        <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;"
+                                href="">contact</a>
+                        </p>
+                        <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">menu</a>
+                        </p>
+                    </div>
+                    <p style=" font-size: 1.5rem; margin: 0 auto; display: block; text-align: center;"><small>SEA.css is
+                            licensed MIT.</small></p>
+                </div>
             </div>
-            <p style=" font-size: 1.5rem; margin: 0 auto; display: block; text-align: center;"><small>SEA.css is
-                    licensed MIT.</small></p>
         </div>
     </footer>
 </body>

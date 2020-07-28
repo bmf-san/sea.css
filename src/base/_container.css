@@ -5,12 +5,15 @@
     max-width: 80%;
 }
 
-.full-containerr {
+.headline {
     align-items: center;
     flex-grow: 1;
     flex-wrap: wrap;
-    justify-content: center;
     margin: 0 auto;
+}
+.headline{
+    padding: 2rem 0;
+    width: 100%;
 }
 
 .row {
