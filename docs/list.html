@@ -10,14 +10,46 @@
 
 <body>
     <header>
-        <nav class="nav">
-            <a class="nav-link-logo">Logo</span>
-                <a class="nav-link" href="doc.html">Doc</a>
-                <a class="nav-link" href="top.html">Top</a>
-                <a class="nav-link" href="list.html">List</a>
-                <a class="nav-link" href="article.html">Article</a>
-                <a class="nav-link" href="contact.html">Contact</a>
-        </nav>
+        <div>
+            <nav class="nav sp-hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a class="nav-link-logo"><img src="./image/logo.png" alt="logo"></a>
+                        </div>
+
+                        <div class="col">
+                            <div class="nav-group">
+                                <a class="nav-link" href="doc.html">Doc</a>
+                                <a class="nav-link" href="top.html">Top</a>
+                                <a class="nav-link" href="list.html">List</a>
+                                <a class="nav-link" href="article.html">Article</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="nav pc-hidden">
+                <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
+                <div id="nav-sp-drawer">
+                    <input id="nav-sp-input" type="checkbox" class="nav-sp-unshown">
+                    <label id="nav-sp-open" for="nav-sp-input"><span></span></label>
+                    <label class="nav-sp-unshown" id="nav-sp-close" for="nav-sp-input"><span></span></label>
+                    <div id="nav-sp-content">
+                        <form id="search">
+                            <input class="form_input_btm form_inner" type="search" name="search" placeholder="search …"
+                                id="search-box">
+                            <button class="search_button" type="submit">Search</button>
+                        </form>
+                        <a class="nav-link" href="doc.html">Doc</a>
+                        <a class="nav-link" href="top.html">Top</a>
+                        <a class="nav-link" href="list.html">List</a>
+                        <a class="nav-link" href="article.html">Article</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
     </header>
 
     <div class="headline">
@@ -25,55 +57,63 @@
             <img src="./image/sea.JPG" alt="image" style="height: 400px;">
         </div>
     </div>
-
-    <article>
-        <div class="container">
+    <div class="container">
+        <article>
+            <h1><a href="#">Lorem Ipsum</a></h1>
+            <span class="article-date" style="padding-right: 1rem;">2020-04-01 00:00:00</span>
+            <a class="tag">Lorem ipsum</a>
+            <a class="tag">Lorem ipsum</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
+                possimus
+                consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
+                voluptatibus
+                cumque libero minus deleniti.</p>
+        </article>
+        <article>
+            <h1><a href="#">Lorem Ipsum</a></h1>
+            <span class="article-date" style="padding-right: 1rem;">2020-04-01 00:00:00</span>
+            <span class="tag">Lorem ipsum</span>
+            <span class="tag">Lorem ipsum</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
+                possimus
+                consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
+                voluptatibus
+                cumque libero minus deleniti.</p>
+        </article>
+        <article>
+            <h1><a href="#">Lorem Ipsum</a></h1>
+            <span class="article-date" style="padding-right: 1rem;">2020-04-01 00:00:00</span>
+            <span class="tag">Lorem ipsum</span>
+            <span class="tag">Lorem ipsum</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
+                possimus
+                consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
+                voluptatibus
+                cumque libero minus deleniti.</p>
+        </article>
+    </div>
+    <footer class="sticky-footer" style="margin-top: 3rem;">
+        <div class="headline">
             <div class="row">
-                <span>2020-04-01 00:00:00</span>
-                <h1><a href="#">Lorem Ipsum</a></h1>
-                <span class="tag">Lorem ipsum</span>
-                <span class="tag">Lorem ipsum</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
-                    possimus
-                    consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
-                    voluptatibus
-                    cumque libero minus deleniti.</p>
+                <div class="col">
+                    <div
+                        style="width: 100%;　flex-direction: row; display: flex; justify-content:center; border-bottom: solid 1px #fff; margin: 0 auto;">
+                        <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;"
+                                href="">contents</a>
+                        </p>
+                        <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;"
+                                href="">contact</a>
+                        </p>
+                        <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">menu</a>
+                        </p>
+                    </div>
+                    <p
+                        style=" font-size: 1.5rem; margin: 0 auto; display: block; text-align: center; padding-top: 1rem;">
+                        <small>SEA.css is
+                            licensed MIT.</small></p>
+                </div>
             </div>
         </div>
-    </article>
-    <article>
-        <div class="container">
-            <div class="row">
-                <span>2020-04-01 00:00:00</span>
-                <h1><a href="#">Lorem Ipsum</a></h1>
-                <span class="tag">Lorem ipsum</span>
-                <span class="tag">Lorem ipsum</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
-                    possimus
-                    consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
-                    voluptatibus
-                    cumque libero minus deleniti.</p>
-            </div>
-        </div>
-    </article>
-    <article>
-        <div class="container">
-            <div class="row">
-                <span>2020-04-01 00:00:00</span>
-                <h1><a href="#">Lorem Ipsum</a></h1>
-                <span class="tag">Lorem ipsum</span>
-                <span class="tag">Lorem ipsum</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
-                    possimus
-                    consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
-                    voluptatibus
-                    cumque libero minus deleniti.</p>
-            </div>
-        </div>
-    </article>
-
-    <footer class="sticky-footer">
-        <span>SEA.css is licensed MIT.</span>
     </footer>
 </body>
 

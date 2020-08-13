@@ -1,18 +1,9 @@
-.media {
+.media{
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
 }
-
-.media-column {
-    display: flex;
-    padding: 0.5rem;
-}
-
 .media-img {
   margin-right: 1em;
-}
-
-.media-body {
-  flex: 1;
+} 
+.media-img-round{
+  border-radius: 50%;
 }

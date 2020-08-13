@@ -4,36 +4,42 @@
     padding: 2rem 10%;
 }
 
-.nav-link-logo {
-    display: flex;
-    flex: 1;
+.nav-link-logo img{
+    min-width: 15rem;
+    max-width: 15rem;
 }
-
+.nav-group{
+    display: flex;
+    margin-left: auto;
+    /*justify-content:flex-end; */
+    justify-content:space-between;
+}
 .nav-link {
     display: flex;
-    flex: none;
     text-decoration: none;
     color: var( --maintext-color);
     font-size: 2rem;
     border-bottom: solid 0.2rem var(--border-color);
-    margin-right: 4.5rem;
     height: 4.5rem;
     padding-top: 1.4rem;
 }
+
 .nav-link:hover{
     border-bottom: solid 0.2rem var(--main-color);
 }
-@media screen and (min-width: 750px){
+@media screen and (min-width: 770px){
 .pc-hidden{
     display: none;
 }
 }
-@media screen and (max-width: 750px){
+@media screen and (max-width: 770px){
 .sp-hidden{
     display: none;
 }
 #nav-sp-drawer{
  padding-top: 0.7rem;
+ justify-content: end;
+ margin-left: auto;
 }
 /*チェックボックス等は非表示に*/
 .nav-sp-unshown {
@@ -61,6 +67,23 @@
 }
 #nav-sp-open span:after {
   bottom: -16px;
+}
+#nav-sp-close span::before, #nav-sp-close span::after{
+  position: absolute;
+  height: 0.3rem;
+  width: 2.5rem;
+  background: #ffffff;
+  content: '';
+  cursor: pointer;
+  top: 3.5rem;
+  right: 10%;
+
+}
+#nav-sp-close span::before{
+    transform: rotate(-45deg);
+}
+#nav-sp-close span::after{
+    transform: rotate(45deg);
 }
 /*mask*/
 #nav-sp-close {
@@ -91,6 +114,9 @@
   transform: translateX(-105%);
 }
 /*表示させる*/
+#nav-sp-input:checked ~ #nav-sp-open span{
+    display: none;
+}
 #nav-sp-input:checked ~ #nav-sp-close {
   display: block;
   opacity: .5;

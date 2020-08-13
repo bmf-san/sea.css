@@ -13,20 +13,36 @@
     <header>
         <div>
             <nav class="nav sp-hidden">
-                <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
-                <a class="nav-link" href="doc.html">Doc</a>
-                <a class="nav-link" href="top.html">Top</a>
-                <a class="nav-link" href="list.html">List</a>
-                <a class="nav-link" href="article.html">Article</a>
-                <a class="nav-link" href="contact.html">Contact</a>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a class="nav-link-logo"><img src="./image/logo.png" alt="logo"></a>
+                        </div>
+
+                        <div class="col">
+                            <div class="nav-group">
+                                <a class="nav-link" href="doc.html">Doc</a>
+                                <a class="nav-link" href="top.html">Top</a>
+                                <a class="nav-link" href="list.html">List</a>
+                                <a class="nav-link" href="article.html">Article</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </nav>
             <nav class="nav pc-hidden">
                 <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
                 <div id="nav-sp-drawer">
                     <input id="nav-sp-input" type="checkbox" class="nav-sp-unshown">
                     <label id="nav-sp-open" for="nav-sp-input"><span></span></label>
-                    <label class="nav-sp-unshown" id="nav-sp-close" for="nav-sp-input"></label>
+                    <label class="nav-sp-unshown" id="nav-sp-close" for="nav-sp-input"><span></span></label>
                     <div id="nav-sp-content">
+                        <form id="search">
+                            <input class="form_input_btm form_inner" type="search" name="search" placeholder="search …"
+                                id="search-box">
+                            <button class="search_button" type="submit">Search</button>
+                        </form>
                         <a class="nav-link" href="doc.html">Doc</a>
                         <a class="nav-link" href="top.html">Top</a>
                         <a class="nav-link" href="list.html">List</a>
@@ -36,9 +52,6 @@
                 </div>
             </nav>
     </header>
-
-
-
     <div class="container">
         <div class="row">
             <div class="column" style="max-width: 50rem; margin:0 auto; justify-content:center;">
@@ -104,15 +117,26 @@
     </div>
 
     <footer class="sticky-footer" style="margin-top: 3rem;">
-        <div class="container">
-            <div
-                style="width: 100%;　flex-direction: row; display: flex; justify-content:center; border-bottom: solid 1px #fff; margin: 0 auto;">
-                <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">contents</a></p>
-                <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">contact</a></p>
-                <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">menu</a></p>
+        <div class="headline">
+            <div class="row">
+                <div class="col">
+                    <div
+                        style="width: 100%;　flex-direction: row; display: flex; justify-content:center; border-bottom: solid 1px #fff; margin: 0 auto;">
+                        <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;"
+                                href="">contents</a>
+                        </p>
+                        <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;"
+                                href="">contact</a>
+                        </p>
+                        <p style="margin-right: 2rem;"><a style="color: #fff; text-decoration: none;" href="">menu</a>
+                        </p>
+                    </div>
+                    <p
+                        style=" font-size: 1.5rem; margin: 0 auto; display: block; text-align: center; padding-top: 1rem;">
+                        <small>SEA.css is
+                            licensed MIT.</small></p>
+                </div>
             </div>
-            <p style=" font-size: 1.5rem; margin: 0 auto; display: block;"><small>SEA.css is
-                    licensed MIT.</small></p>
         </div>
     </footer>
 </body>

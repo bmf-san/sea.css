@@ -8,4 +8,11 @@
     color: var(--main-color);
     border:var(--main-color) solid 0.1rem;
     font-size: 1.4rem;
+    text-decoration: none;
+    height: 2.6rem;
+}
+
+.tag:hover{
+    color: #ffffff;
+    background-color: var(--main-color);
 }

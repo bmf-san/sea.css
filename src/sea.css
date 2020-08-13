@@ -7,6 +7,7 @@
 @import "./component/_media.css";
 @import "./component/_pagination.css";
 @import "./component/_tag.css";
+@import "./component/_search.css";
 @import "./util/_color.css";
 
 :root {
