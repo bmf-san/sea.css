@@ -38,9 +38,6 @@
   justify-content: end;
   margin-left: auto;
   }
-  .nav-sp-unshown {
-    display:none;
-  }
   #nav-sp-open {
     display: inline-block;
     width: 3rem;

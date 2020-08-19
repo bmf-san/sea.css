@@ -28,7 +28,7 @@
     ],
     "scripts": {
         "build": "rimraf dist/* && npm-run-all postcss && cross-env NODE_ENV=production postcss ./src/sea.css --ext .min.css --dir=dist/ && gzip -c dist/sea.min.css | wc -c | xargs echo 'Size:'",
-        "postcss": "postcss ./src/sea.css -d dist/",
+        "postcss": "postcss -c ./postcss.config.js ./src/sea.css -o dist/sea.min.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [

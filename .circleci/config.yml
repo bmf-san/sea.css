@@ -21,11 +21,6 @@ commands:
         steps:
             - run: sudo npm i -g can-npm-publish
 jobs:
-    test:
-        executor: default
-        steps:
-            - npm_install
-            - run: npm test
     publish:
         executor: default
         steps:
@@ -44,16 +39,8 @@ workflows:
     version: 2
     publishflow:
         jobs:
-            - test:
-                context: npm
-                filters:
-                    branches:
-                        only:
-                            - master
             - publish:
                 context: npm
-                requires:
-                    - test
                 filters:
                     branches:
                         only:

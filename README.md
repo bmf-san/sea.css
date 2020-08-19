@@ -10,8 +10,7 @@ sea.css is a simple and easy to use css framework.
 - No JavaScript.
 
 # Docs & Examples
-<!-- TODO: -->
-See this [github pages]().
+See this [github pages](https://bmf-san.github.io/sea.css/).
 You can check the design of sea.css.
 
 # Get started
@@ -21,8 +20,12 @@ You can get the latest release from github.
 
 ## npm or yarn
 You can install sea.css from npm or yarn
+`npm i sea.css`
 
-// TODO: cdn unpkg
+## CDN
+```html
+<link rel="stylesheet" href="https://unpkg.com/sea.css@1.0.0/dist/sea.min.css">
+```
 
 # Customizing
 sea.css uses a basic set of css variables, so you can override the variables defined in sea.css.
