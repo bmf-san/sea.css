@@ -11,7 +11,7 @@ sea.css is a simple and easy to use css framework.
 
 # Docs & Examples
 <!-- TODO: -->
-See this [github pages]().
+See this [github pages](https://bmf-san.github.io/sea.css/).
 You can check the design of sea.css.
 
 # Get started
