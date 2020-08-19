@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../src/sea.css">
+    <link rel="stylesheet" href="../src/component/_form.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav class="nav sp-hidden">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a class="nav-link-logo"><img src="./image/logo.png" alt="logo"></a>
+                        </div>
+
+                        <div class="col">
+                            <div class="nav-group">
+                                <a class="nav-link" href="doc.html">Doc</a>
+                                <a class="nav-link" href="top.html">Top</a>
+                                <a class="nav-link" href="list.html">List</a>
+                                <a class="nav-link" href="article.html">Article</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav class="nav pc-hidden">
+                <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
+                <div id="nav-sp-drawer">
+                    <input id="nav-sp-input" type="checkbox" class="nav-sp-unshown">
+                    <label id="nav-sp-open" for="nav-sp-input"><span></span></label>
+                    <label class="nav-sp-unshown" id="nav-sp-close" for="nav-sp-input"><span></span></label>
+                    <div id="nav-sp-content">
+                        <h1>Navigation</h1>
+                        <a class="nav-link" href="doc.html">Doc</a>
+                        <a class="nav-link" href="top.html">Top</a>
+                        <a class="nav-link" href="list.html">List</a>
+                        <a class="nav-link" href="article.html">Article</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="column" style="max-width: 50rem; margin:0 auto; justify-content:center;">
+                <div class="alert alert-success">
+                    alert-success
+                </div>
+                <h1>Form</h1>
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example.com">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+
+                    <label for="textarea">Textarea</label>
+                    <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+
+                    <div class="radio">
+                        <input type="radio" id="radio1" class="radio-input" name="radio" value="radio">
+                        <label for="radio1" class="radio-label">Radio</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" id="radio2" class="radio-input" name="radio" value="radio">
+                        <label for="radio2" class="radio-label">Radio</label>
+                    </div>
+
+                    <div class="radio">
+                        <input type="radio" id="radio3" class="radio-input" name="radio" value="radio">
+                        <label for="radio3" class="radio-label">Radio</label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
+                                value="checkbox">
+                            <span class="check-label">Checkbox1</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
+                                value="checkbox">
+                            <span for="checkbox" class="check-label">Checkbox2</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox"
+                                value="checkbox">
+                            <span for="checkbox" class="check-label">Checkbox3</span>
+                        </label>
+                    </div>
+
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="datetime-local">Datetime-local</label>
+                    <input type="datetime-local" id="datetime-local" name="datetime-local">
+
+                    <label for="file">File</label>
+                    <input type="file" id="file" name="file" class="file">
+
+                    <label for="number">Number</label>
+                    <input type="number" id="number" name="number" min="1" max="5">
+
+                    <input type="submit" value="Submit" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="sticky-footer" style="margin-top: 3rem;">
+        <div class="headline">
+            <div class="row">
+                <div class="col">
+                    <div style="width: 100%; flex-direction: row; display: flex; justify-content:center; border-bottom: solid 2px #fff; margin: 0 auto;">
+                        <p style="margin-right: 2rem;">
+                            <a style="color: #fff; text-decoration: none;" href="">contents</a>
+                        </p>
+                        <p style="margin-right: 2rem;">
+                            <a style="color: #fff; text-decoration: none;" href="">contact</a>
+                        </p>
+                        <p style="margin-right: 2rem;">
+                            <a style="color: #fff; text-decoration: none;" href="">menu</a>
+                        </p>
+                    </div>
+                    <p style=" font-size: 1.5rem; margin: 0 auto; display: block; text-align: center; padding-top: 1rem;">
+                        <small>SEA.css is licensed MIT.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
