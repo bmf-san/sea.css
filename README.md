@@ -1,4 +1,7 @@
 # sea.css
+[![CircleCI](https://circleci.com/gh/bmf-san/sea.css/tree/master.svg?style=svg)](https://circleci.com/gh/bmf-san/sea.css/tree/master)
+[![GitHub license](https://img.shields.io/github/license/bmf-san/sea.css)](https://github.com/bmf-san/sea.css/blob/master/LICENSE)
+
 sea.css is a simple and easy to use css framework.
 
 ![logo](https://user-images.githubusercontent.com/13291041/90637808-6c050a80-e267-11ea-8288-0dc25145d2fc.png)
@@ -21,6 +24,8 @@ You can get the latest release from github.
 ## npm or yarn
 You can install sea.css from npm or yarn
 `npm i sea.css`
+
+[![NPM](https://nodei.co/npm/sea.css.png)](https://nodei.co/npm/sea.css/)
 
 ## CDN
 ```html
