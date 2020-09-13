@@ -6,7 +6,7 @@
 
 sea.css is a simple and easy to use css framework.
 
-# Features.
+# Features
 - Simple design.
 - Easy to use.
 - Minimal file size.
