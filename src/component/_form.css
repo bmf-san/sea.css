@@ -1,3 +1,11 @@
+input,
+button,
+textarea{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+ 
+}
 form input{
     height: 5rem;
     border-radius: 0.3rem;
@@ -8,17 +16,17 @@ form input{
     padding: 1.6rem;
     margin-bottom: 2.2rem;
 }
-form input:focus, textarea:focus {
+form input:focus, textarea:focus{
     background: #EFFAFC;
     outline: none;  
 }
-form input-selected {
+form input-selected{
     background: #fff;
 }
-.form_inner {
+.form_inner{
     padding: 1em;
 }
-.form_input_btm {
+.form_input_btm{
     margin-bottom: 1.2em;
 }
 label{
@@ -33,18 +41,19 @@ textarea{
   margin-bottom: 2.2rem;
   border-radius: 0.3rem;
 }
+
 .radio,.checkbox{
     display: inline-flex;
     flex-wrap: wrap;
     margin-bottom: 2em;
 }
 .radio input[type="radio"], .checkbox input[type="checkbox"] {
-    display: none;
-}
+        display: none;
+    }
 .radio input[type="radio"]:checked + .radio-label:before, .checkbox input[type="checkbox"]:checked + .checkbox-label:before {
     border-color: var(--main-color);
 }
-.radio input[type="radio"]:checked + .radio-label:after, .checkbox input[type="checkbox"]:checked + .checkbox-label:after {
+.radio input[type="radio"]:checked + .radio-label:after, .checkbox input[type="checkbox"]:checked + .checkbox-label:after{
     transform: scale(1);
 }
 .radio-label{
@@ -55,7 +64,7 @@ textarea{
     cursor: pointer;
     margin-right: 2rem;
 }
-.radio-label:before {
+.radio-label:before{
     position: absolute;
     border-radius: 50%;
     content: '';  
@@ -66,7 +75,7 @@ textarea{
     left: 0;
     top: 0.2rem;
 }
-.radio-label:after {
+.radio-label:after{
     position: absolute;
     content: '';  
     top: 0.8rem;
@@ -86,7 +95,7 @@ textarea{
     vertical-align: bottom;
     cursor: pointer;
 }
-.check-label::before {
+.check-label::before{
   content: "";
   display: block;
   position: absolute;
@@ -100,7 +109,7 @@ textarea{
 .checkbox-input:checked {
   border: 2px solid var(--main-color);
 }
-.checkbox-input:checked + .check-label::after {
+.checkbox-input:checked + .check-label::after{
   content: "";
   display: block;
   position: absolute;
@@ -134,6 +143,5 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active  {
-   box-shadow: 0 0 0 30px white inset !important;
-   -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
