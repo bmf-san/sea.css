@@ -5,20 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/sea.css/dist/sea.min.css">
+    <link rel="stylesheet" href="dist/sea.min.css">
 </head>
 
 <body>
     <header>
         <div>
             <nav class="nav sp-hidden">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <a class="nav-link-logo"><img src="./image/logo.png" alt="logo"></a>
-                        </div>
-                        <div class="col">
-                            <div class="nav-group">
+                <div class="col-nav">
+                    <div class="nav-left">
+                        <a href="#"><img src="./image/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="nav-right">
+                        <a class="nav-link" href="index.html">Doc</a>
+                        <a class="nav-link" href="top.html">Top</a>
+                        <a class="nav-link" href="list.html">List</a>
+                        <a class="nav-link" href="article.html">Article</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="nav pc-hidden">
+                <div class="col-nav">
+                    <div class="nav-left">
+                        <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
+                    </div>
+                    <div class="nav-right">
+                        <div id="nav-sp-drawer">
+                            <input id="nav-sp-input" type="checkbox" class="sp-hidden">
+                            <label id="nav-sp-open" for="nav-sp-input"><span></span></label>
+                            <label class="sp-hidden" id="nav-sp-close" for="nav-sp-input"><span></span></label>
+                            <div id="nav-sp-content">
+                                <h1>Navigation</h1>
                                 <a class="nav-link" href="index.html">Doc</a>
                                 <a class="nav-link" href="top.html">Top</a>
                                 <a class="nav-link" href="list.html">List</a>
@@ -29,25 +47,9 @@
                     </div>
                 </div>
             </nav>
-            <nav class="nav pc-hidden">
-                <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
-                <div id="nav-sp-drawer">
-                    <input id="nav-sp-input" type="checkbox" class="sp-hidden">
-                    <label id="nav-sp-open" for="nav-sp-input"><span></span></label>
-                    <label class="sp-hidden" id="nav-sp-close" for="nav-sp-input"><span></span></label>
-                    <div id="nav-sp-content">
-                        <h1>Navigation</h1>
-                        <a class="nav-link" href="index.html">Doc</a>
-                        <a class="nav-link" href="top.html">Top</a>
-                        <a class="nav-link" href="list.html">List</a>
-                        <a class="nav-link" href="article.html">Article</a>
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </div>
-                </div>
-            </nav>
     </header>
 
-    <div class="headline" style="background-image: url('./image/sea.JPG');background-size: cover;">
+    <div class="headline background-color-main color-text-reverse">
         <div class="container">
             <h1>Headline</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sunt exercitationem quos? Vero rem
@@ -56,371 +58,467 @@
         </div>
     </div>
 
-    <div class="container" style="max-width:640px;">
-        <h1>Heading</h1>
-        <h1>h1</h1>
-        <h2>h2</h2>
-        <h3>h3</h3>
-        <h4>h4</h4>
-        <h5>h5</h5>
-        <h6>h6</h6>
-
-        <hr>
-
-        <h1>Search</h1>
-        <form class="search">
-            <input class="form_input_btm form_inner" type="search" name="search" placeholder="search …" id="search-box">
-            <button class="search-button" type="submit">Search</button>
-        </form>
-
-        <hr>
-
-        <h1>Paragraph</h1>
-        <p class="article-date">2020.6.8</p>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-            labore
-            et dolore
-            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            Stet
-            clita kasd
-            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing
-            elitr, <mark>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</mark>
-            sed
-            diam
-            voluptua. At vero eos et
-            accusam et <a href="#">justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</a>
-            sanctus est
-            Lorem
-            ipsum dolor sit
-            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut
-            labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-            rebum.
-            Stet clita kasd
-            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing
-            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et
-            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem
-            ipsum dolor sit
-            amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut
-            labore et
-            dolore magna aliquyam.</p>
-        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
-        <div class="code-block">
-            <code>
-            package main
-            
-            import "fmt"
-            
-            func main() {
-                fmt.Println("Hello World")
-            }
-           </code>
+    <div class="container-readable">
+        <div class="row">
+            <div class="col">
+                <h1>Heading</h1>
+                <h1>h1</h1>
+                <h2>h2</h2>
+                <h3>h3</h3>
+                <h4>h4</h4>
+                <h5>h5</h5>
+                <h6>h6</h6>
+            </div>
         </div>
 
         <hr>
 
-        <h1>Inline text element</h1>
-        <h2>Mark</h2>
-        <p><mark>Lorem Ipsum</mark> is simply dummy text of the printing and typesetting industry.</p>
-        <h2>Del</h2>
-        <p><del>Lorem Ipsum</del> is simply dummy text of the printing and typesetting industry.</p>
-        <h2>U</h2>
-        <p><u>Lorem Ipsum</u> is simply dummy text of the printing and typesetting industry.</p>
-        <h2>Small</h2>
-        <p><small>Lorem Ipsum</small> is simply dummy text of the printing and typesetting industry.</p>
-        <h2>Strong</h2>
-        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry.</p>
-        <h2>Em</h2>
-        <p><em>Lorem Ipsum</em> is simply dummy text of the printing and typesetting industry.</p>
+        <div class="row">
+            <div class="col">
+                <h1>Search</h1>
+                <form class="search">
+                    <input class="form_input_btm form_inner" type="search" name="search" placeholder="search …" id="search-box">
+                    <button class="search-button" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
 
         <hr>
 
-        <h1>Anchor</h1>
-        <a href="#">Lorem Ipsum</a>
+        <div class="row">
+            <div class="col">
+                <h1>Paragraph</h1>
+                <p class="article-date">2020.6.8</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore
+                    et dolore
+                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet
+                    clita kasd
+                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consetetur sadipscing
+                    elitr, <mark>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</mark>
+                    sed
+                    diam
+                    voluptua. At vero eos et
+                    accusam et <a href="#">justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata</a>
+                    sanctus est
+                    Lorem
+                    ipsum dolor sit
+                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut
+                    labore et
+                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                    rebum.
+                    Stet clita kasd
+                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consetetur sadipscing
+                    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                    voluptua. At vero eos et
+                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                    Lorem
+                    ipsum dolor sit
+                    amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut
+                    labore et
+                    dolore magna aliquyam.</p>
+                <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
+                <div class="code-block">
+                    <code>
+                    package main
 
-        <hr>
+                    import "fmt"
 
-        <h1>Definition</h1>
-        <dl>
-            <dt>Lorem Ipsum</dt>
-            <dd>dolor sit ame</dd>
-        </dl>
-
-        <hr>
-
-        <h1>Table</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Lorem</th>
-                    <th>Ipsum</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td>Lorem</td>
-                    <td>Ipsum</td>
-                </tr>
-            </tfoot>
-        </table>
-
-        <hr>
-
-        <h1>List</h1>
-        <h2>Ordered list</h2>
-        <ol>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-        </ol>
-        <h2>Unordered list</h2>
-        <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-        </ul>
-
-        <hr>
-
-        <h1>Blockquote</h1>
-        <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
-
-        <hr>
-
-        <h1>Code block</h1>
-        <div class="code-block">
-            <code>
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello World")
-}
+                    func main() {
+                        fmt.Println("Hello World")
+                    }
                 </code>
-        </div>
-
-        <hr>
-
-        <h1>Image</h1>
-        <img src="./image/sea.JPG" alt="image" style="width: 600px; height: 300px;">
-
-        <hr>
-
-        <h1>Button</h1>
-        <button>Lorem Ipsum</button>
-
-        <hr>
-
-        <h1>Flexbox column</h1>
-        <div class="row">
-            <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col</p>
-            </div>
-            <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col</p>
-            </div>
-            <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col</p>
-            </div>
-            <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col</p>
-            </div>
-            <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col</p>
-            </div>
-            <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col</p>
-            </div>
-            <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col</p>
-            </div>
-            <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <h1>Grid colomn</h1>
-        <div class="row">
-            <div class="col-1" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col-1</p>
-            </div>
-            <div class="col-2" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col-2</p>
-            </div>
-            <div class="col-3" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col-3</p>
-            </div>
-            <div class="col-4" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
-                <p>col-4</p>
-            </div>
-        </div>
-
-        <hr>
-
-        <div>
-            <h1>Form</h1>
-            <form action="#">
-                <label for="name">Name</label>
-                <input class="form_input_btm form_inner" type="text" id="name" name="name" value=""
-                    placeholder="First name">
-
-                <label for="email">Email</label>
-                <input class="form_input_btm form_inner" type="email" id="email" name="email">
-
-                <label for="password">Password</label>
-                <input class="form_input_btm form_inner" type="password" id="password" name="password">
-
-                <label for="textarea">Textarea</label>
-                <textarea class="form_input_btm form_inner" name="textarea" id="" cols="113" rows="10"></textarea>
-                <div class="radio">
-                    <input type="radio" id="radio" class="radio-input" name="radio" value="radio">
-                    <label for="radio" class="radio-label">Radio</label>
                 </div>
-                <div class="radio">
-                    <input type="radio" id="radio2" class="radio-input" name="radio" value="radio">
-                    <label for="radio2" class="radio-label">Radio</label>
-                </div>
-                <div class="radio">
-                    <input type="radio" id="radio3" class="radio-input" name="radio" value="radio">
-                    <label for="radio3" class="radio-label">Radio</label>
-                </div>
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox" value="checkbox">
-                        <span class="check-label">Checkbox1</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox" value="checkbox">
-                        <span for="checkbox" class="check-label">Checkbox2</span>
-                    </label>
-                    <label>
-                        <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox" value="checkbox">
-                        <span for="checkbox" class="check-label">Checkbox3</span>
-                    </label>
-                </div>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date">
-
-                <label for="datetime-local">Datetime-local</label>
-                <input type="datetime-local" id="datetime-local" name="datetime-local">
-
-                <label for="file">File</label>
-                <input type="file" id="file" name="file" class="file">
-
-                <label for="number">Number</label>
-                <input type="number" id="number" name="number" min="1" max="5">
-
-                <input type="submit" value="Submit" class="submit-button">
-            </form>
+            </div>
         </div>
 
         <hr>
 
-        <h1>Media</h1>
         <div class="row">
             <div class="col">
-                <div class="media">
-                    <img class="media-img" src="./image/sea.JPG" alt="media image" style="width: 6rem; height: 6rem;">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a
-                        vel,
-                        delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam
-                        dolores
-                        exercitationem odio cum. Consectetur, harum et!</p>
-                </div>
+                <h1>Inline text element</h1>
+                <h2>Mark</h2>
+                <p><mark>Lorem Ipsum</mark> is simply dummy text of the printing and typesetting industry.</p>
+                <h2>Del</h2>
+                <p><del>Lorem Ipsum</del> is simply dummy text of the printing and typesetting industry.</p>
+                <h2>U</h2>
+                <p><u>Lorem Ipsum</u> is simply dummy text of the printing and typesetting industry.</p>
+                <h2>Small</h2>
+                <p><small>Lorem Ipsum</small> is simply dummy text of the printing and typesetting industry.</p>
+                <h2>Strong</h2>
+                <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry.</p>
+                <h2>Em</h2>
+                <p><em>Lorem Ipsum</em> is simply dummy text of the printing and typesetting industry.</p>
             </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
             <div class="col">
-                <div class="media">
-                    <img class="media-img media-img-round" src="./image/sea.JPG" alt="media image"
-                        style="width: 6rem; height: 6rem;">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a
-                        vel,
-                        delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam
-                        dolores
-                        exercitationem odio cum. Consectetur, harum et!</p>
+                <h1>Anchor</h1>
+                <a href="#">Lorem Ipsum</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>Definition</h1>
+                <dl>
+                    <dt>Lorem Ipsum</dt>
+                    <dd>dolor sit ame</dd>
+                </dl>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>Table</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lorem</th>
+                            <th>Ipsum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem</td>
+                            <td>Ipsum</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Lorem</td>
+                            <td>Ipsum</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>List</h1>
+                <h2>Ordered list</h2>
+                <ol>
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                </ol>
+                <h2>Unordered list</h2>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Ipsum</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>Blockquote</h1>
+                <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockquote>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>Code block</h1>
+                <pre>
+                    <code>
+        package main
+
+        import "fmt"
+
+        func main() {
+            fmt.Println("Hello World")
+        }
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>Image</h1>
+                <img src="./image/logo.png" alt="image" style="width: 600px; height: 300px;">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>Button</h1>
+                <button>Lorem Ipsum</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>Flexbox column</h1>
+                <div class="row">
+                    <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col</p>
+                    </div>
+                    <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col</p>
+                    </div>
+                    <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col</p>
+                    </div>
+                    <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col</p>
+                    </div>
+                    <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col</p>
+                    </div>
+                    <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col</p>
+                    </div>
+                    <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col</p>
+                    </div>
+                    <div class="col" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <hr>
 
-        <h1>Tag</h1>
-        <a class="tag" href="">Lorem ipsum</a>
-        <a class="tag" href="">Lorem ipsum</a>
-        <a class="tag" href="">Lorem ipsum</a>
-        <a class="tag" href="">Lorem ipsum</a>
-        <a class="tag" href="">Lorem ipsum</a>
+        <div class="row">
+            <div class="col">
+                <h1>Grid colomn</h1>
+                <div class="row">
+                    <div class="col-1" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col-1</p>
+                    </div>
+                    <div class="col-2" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col-2</p>
+                    </div>
+                    <div class="col-3" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col-3</p>
+                    </div>
+                    <div class="col-4" style="background-color: #EFFAFC; border: solid 1px #C7DADD;">
+                        <p>col-4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <hr>
 
+        <div class="row">
+            <div class="col">
+                <div>
+                    <h1>Form</h1>
+                    <form action="#">
+                        <label for="name">Name</label>
+                        <input class="form_input_btm form_inner" type="text" id="name" name="name" value=""
+                            placeholder="First name">
+
+                        <label for="email">Email</label>
+                        <input class="form_input_btm form_inner" type="email" id="email" name="email">
+
+                        <label for="password">Password</label>
+                        <input class="form_input_btm form_inner" type="password" id="password" name="password">
+
+                        <label for="textarea">Textarea</label>
+                        <textarea class="form_input_btm form_inner" name="textarea" id="" cols="113" rows="10"></textarea>
+                        <div class="radio">
+                            <input type="radio" id="radio" class="radio-input" name="radio" value="radio">
+                            <label for="radio" class="radio-label">Radio</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="radio2" class="radio-input" name="radio" value="radio">
+                            <label for="radio2" class="radio-label">Radio</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="radio3" class="radio-input" name="radio" value="radio">
+                            <label for="radio3" class="radio-label">Radio</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox" value="checkbox">
+                                <span class="check-label">Checkbox1</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox" value="checkbox">
+                                <span for="checkbox" class="check-label">Checkbox2</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="checkbox" class="checkbox-input" name="checkbox" value="checkbox">
+                                <span for="checkbox" class="check-label">Checkbox3</span>
+                            </label>
+                        </div>
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date">
+
+                        <label for="datetime-local">Datetime-local</label>
+                        <input type="datetime-local" id="datetime-local" name="datetime-local">
+
+                        <label for="file">File</label>
+                        <input type="file" id="file" name="file" class="file">
+
+                        <label for="number">Number</label>
+                        <input type="number" id="number" name="number" min="1" max="5">
+
+                        <input type="submit" value="Submit" class="submit-button">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>Media</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="media">
+                            <img class="media-img" src="./image/logo_mark.png" alt="media image" style="width: 6rem; height: 6rem;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a
+                                vel,
+                                delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam
+                                dolores
+                                exercitationem odio cum. Consectetur, harum et!</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="media">
+                            <img class="media-img media-img-round" src="./image/logo_mark.png" alt="media image"
+                                style="width: 6rem; height: 6rem;">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a
+                                vel,
+                                delectus nemo deserunt nostrum error beatae voluptas eligendi iste expedita ullam
+                                dolores
+                                exercitationem odio cum. Consectetur, harum et!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>Tag</h1>
+                <a class="tag" href="">Lorem ipsum</a>
+                <a class="tag" href="">Lorem ipsum</a>
+                <a class="tag" href="">Lorem ipsum</a>
+                <a class="tag" href="">Lorem ipsum</a>
+                <a class="tag" href="">Lorem ipsum</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col">
         <h1>Pagination</h1>
-        <div class="pagination">
-            <ul class="pagination-list">
-                <li class="pagination-pre"><a href="#"><span>«</span></a></li>
-                <li><a href="#"><span>1</span></a></li>
-                <li><a href="#"><span>2</span></a></li>
-                <li><a href="#"><span>3</span></a></li>
-                <li><a href="#"><span>4</span></a></li>
-                <li><a href="#"><span>5</span></a></li>
-                <li class="pagination-next"><a href="#"><span>»</span></a></li>
-            </ul>
+                <div class="pagination">
+                    <ul class="pagination-list">
+                        <li class="pagination-pre"><a href="#"><span>«</span></a></li>
+                        <li><a href="#"><span>1</span></a></li>
+                        <li><a href="#"><span>2</span></a></li>
+                        <li><a href="#"><span>3</span></a></li>
+                        <li><a href="#"><span>4</span></a></li>
+                        <li><a href="#"><span>5</span></a></li>
+                        <li class="pagination-next"><a href="#"><span>»</span></a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <hr>
 
-        <h1>Alert</h1>
-        <div class="alert alert-success">
-            alert-success
-        </div>
-        <div class="alert alert-danger">
-            alert-danger
-        </div>
-        <div class="alert alert-warning">
-            alert-warning
-        </div>
-        <div class="alert alert-info">
-            alert-info
+        <div class="row">
+            <div class="col">
+                <h1>Alert</h1>
+                <div class="alert alert-success">
+                    alert-success
+                </div>
+                <div class="alert alert-danger">
+                    alert-danger
+                </div>
+                <div class="alert alert-warning">
+                    alert-warning
+                </div>
+                <div class="alert alert-info">
+                    alert-info
+                </div>
+            </div>
         </div>
 
         <hr>
+
+        <div class="row">
+            <div class="col">
+                <h1>Tab</h1>
+                <div class="tab">
+                    <input id="contents-a" type="radio" name="tab" class="tab-toggle" checked="checked" /><label class="tab-label" for="contents-a">Contents A</label>
+                    <div class="col-tab">
+                        Contents A
+                    </div>
+                    <input id="contents-b" type="radio" name="tab" class="tab-toggle" /><label class="tab-label" for="contents-b">Contents B</label>
+                    <div class="col-tab">
+                        Contents B
+                    </div>
+                    <input id="contents-c" type="radio" name="tab" class="tab-toggle" /><label class="tab-label" for="contents-c">Contents C</label>
+                    <div class="col-tab">
+                        Contents C
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer class="sticky-footer" style="margin-top: 3rem;">
-        <div class="headline">
+    <footer class="sticky-footer margin-top-2rem">
+        <div class="container">
             <div class="row">
                 <div class="col">
                     <h1>Sticky footer</h1>
-                    <div style="width: 100%; flex-direction: row; display: flex; justify-content:center; border-bottom: solid 2px #fff; margin: 0 auto;">
-                        <p style="margin-right: 2rem;">
-                            <a style="color: #fff; text-decoration: none;" href="">contents</a>
-                        </p>
-                        <p style="margin-right: 2rem;">
-                            <a style="color: #fff; text-decoration: none;" href="">contact</a>
-                        </p>
-                        <p style="margin-right: 2rem;">
-                            <a style="color: #fff; text-decoration: none;" href="">menu</a>
-                        </p>
-                    </div>
-                    <p style=" font-size: 1.5rem; margin: 0 auto; display: block; text-align: center; padding-top: 1rem;">
-                        <small>SEA.css is licensed MIT.</small>
-                    </p>
+                </div>
+            </div>
+            <div class="row text-align-center">
+                <div class="col">
+                    <a class="color-text-reverse" href="#">RSS</a>
+                </div>
+                <div class="col">
+                    <a class="color-text-reverse" href="#">Feed</a>
+                </div>
+            </div>
+            <hr>
+            <div class="row text-align-center">
+                <div class="col">
+                    <small>SEA.css is licensed MIT.</small>
                 </div>
             </div>
         </div>

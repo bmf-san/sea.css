@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title>
-    <link rel="stylesheet" href="https://unpkg.com/sea.css/dist/sea.min.css">
+    <link rel="stylesheet" href="dist/sea.min.css">
 </head>
 </head>
 
@@ -13,13 +13,31 @@
     <header>
         <div>
             <nav class="nav sp-hidden">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <a class="nav-link-logo"><img src="./image/logo.png" alt="logo"></a>
-                        </div>
-                        <div class="col">
-                            <div class="nav-group">
+                <div class="col-nav">
+                    <div class="nav-left">
+                        <a href="#"><img src="./image/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="nav-right">
+                        <a class="nav-link" href="index.html">Doc</a>
+                        <a class="nav-link" href="top.html">Top</a>
+                        <a class="nav-link" href="list.html">List</a>
+                        <a class="nav-link" href="article.html">Article</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="nav pc-hidden">
+                <div class="col-nav">
+                    <div class="nav-left">
+                        <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
+                    </div>
+                    <div class="nav-right">
+                        <div id="nav-sp-drawer">
+                            <input id="nav-sp-input" type="checkbox" class="sp-hidden">
+                            <label id="nav-sp-open" for="nav-sp-input"><span></span></label>
+                            <label class="sp-hidden" id="nav-sp-close" for="nav-sp-input"><span></span></label>
+                            <div id="nav-sp-content">
+                                <h1>Navigation</h1>
                                 <a class="nav-link" href="index.html">Doc</a>
                                 <a class="nav-link" href="top.html">Top</a>
                                 <a class="nav-link" href="list.html">List</a>
@@ -30,88 +48,80 @@
                     </div>
                 </div>
             </nav>
-            <nav class="nav pc-hidden">
-                <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
-                <div id="nav-sp-drawer">
-                    <input id="nav-sp-input" type="checkbox" class="sp-hidden">
-                    <label id="nav-sp-open" for="nav-sp-input"><span></span></label>
-                    <label class="sp-hidden" id="nav-sp-close" for="nav-sp-input"><span></span></label>
-                    <div id="nav-sp-content">
-                        <h1>Navigation</h1>
-                        <a class="nav-link" href="index.html">Doc</a>
-                        <a class="nav-link" href="top.html">Top</a>
-                        <a class="nav-link" href="list.html">List</a>
-                        <a class="nav-link" href="article.html">Article</a>
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </div>
-                </div>
-            </nav>
     </header>
 
-    <div class="headline">
-        <div class="row">
-            <img src="./image/sea.JPG" alt="image" style="height: 400px;">
-        </div>
-    </div>
-
     <div class="container">
-        <article>
-            <h1><a href="#">Lorem Ipsum</a></h1>
-            <span class="article-date" style="padding-right: 1rem;">2020-04-01 00:00:00</span>
-            <a class="tag">Lorem ipsum</a>
-            <a class="tag">Lorem ipsum</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
-                possimus
-                consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
-                voluptatibus
-                cumque libero minus deleniti.</p>
-        </article>
-        <article>
-            <h1><a href="#">Lorem Ipsum</a></h1>
-            <span class="article-date" style="padding-right: 1rem;">2020-04-01 00:00:00</span>
-            <span class="tag">Lorem ipsum</span>
-            <span class="tag">Lorem ipsum</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
-                possimus
-                consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
-                voluptatibus
-                cumque libero minus deleniti.</p>
-        </article>
-        <article>
-            <h1><a href="#">Lorem Ipsum</a></h1>
-            <span class="article-date" style="padding-right: 1rem;">2020-04-01 00:00:00</span>
-            <span class="tag">Lorem ipsum</span>
-            <span class="tag">Lorem ipsum</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
-                possimus
-                consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
-                voluptatibus
-                cumque libero minus deleniti.</p>
-        </article>
-    </div>
-
-    <footer class="sticky-footer" style="margin-top: 3rem;">
-        <div class="headline">
-            <div class="row">
-                <div class="col">
-                    <div style="width: 100%; flex-direction: row; display: flex; justify-content:center; border-bottom: solid 2px #fff; margin: 0 auto;">
-                        <p style="margin-right: 2rem;">
-                            <a style="color: #fff; text-decoration: none;" href="">contents</a>
-                        </p>
-                        <p style="margin-right: 2rem;">
-                            <a style="color: #fff; text-decoration: none;" href="">contact</a>
-                        </p>
-                        <p style="margin-right: 2rem;">
-                            <a style="color: #fff; text-decoration: none;" href="">menu</a>
-                        </p>
+        <div class="row">
+            <div class="col">
+                <article>
+                    <h5><a class="main-black" href="#"><b>Lorem Ipsum</b></a></h5>
+                    <p class="margin-0rem"><a href="#">category</a></p>
+                    <span class="article-date">created at:2020.06.22 ｜ updated at:2020.07.22</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
+                        possimus
+                        consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
+                        voluptatibus
+                        cumque libero minus deleniti.</p>
+                    <div class="text-align-right">
+                        <a class="tag">Lorem ipsum</a>
+                        <a class="tag">Lorem ipsum</a>
                     </div>
-                    <p style=" font-size: 1.5rem; margin: 0 auto; display: block; text-align: center; padding-top: 1rem;">
-                        <small>SEA.css is licensed MIT.</small>
-                    </p>
-                </div>
+                </article>
+                <article>
+                    <h5><a class="main-black" href="#"><b>Lorem Ipsum</b></a></h5>
+                    <p class="margin-0rem"><a href="#">category</a></p>
+                    <span class="article-date">created at:2020.06.22 ｜ updated at:2020.07.22</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
+                        possimus
+                        consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
+                        voluptatibus
+                        cumque libero minus deleniti.</p>
+                    <div class="text-align-right">
+                        <a class="tag">Lorem ipsum</a>
+                        <a class="tag">Lorem ipsum</a>
+                    </div>
+                </article>
+                <article>
+                    <h5><a class="main-black" href="#"><b>Lorem Ipsum</b></a></h5>
+                    <p class="margin-0rem"><a href="#">category</a></p>
+                    <span class="article-date">created at:2020.06.22 ｜ updated at:2020.07.22</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque repellat provident quo, in sunt
+                        possimus
+                        consequuntur similique cupiditate iusto voluptas obcaecati delectus dolorum facilis numquam
+                        voluptatibus
+                        cumque libero minus deleniti.</p>
+                    <div class="text-align-right">
+                        <a class="tag">Lorem ipsum</a>
+                        <a class="tag">Lorem ipsum</a>
+                    </div>
+                </article>
             </div>
         </div>
-    </footer>
+    </div>
+
+	<footer class="sticky-footer margin-top-2rem">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Sticky footer</h1>
+				</div>
+			</div>
+			<div class="row text-align-center">
+				<div class="col">
+					<a class="color-text-reverse" href="#">RSS</a>
+				</div>
+				<div class="col">
+					<a class="color-text-reverse" href="#">Feed</a>
+				</div>
+			</div>
+			<hr>
+			<div class="row text-align-center">
+				<div class="col">
+					<small>SEA.css is licensed MIT.</small>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

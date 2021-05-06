@@ -1,20 +1,41 @@
-@import "./base/_element.css";
+/* base */
+
 @import "./base/_container.css";
+@import "./base/_element.css";
+
+/* component */
+
 @import "./component/_alert.css";
+@import "./component/_color.css";
 @import "./component/_footer.css";
 @import "./component/_form.css";
 @import "./component/_header.css";
 @import "./component/_media.css";
 @import "./component/_pagination.css";
 @import "./component/_search.css";
+@import "./component/_spacing.css";
+@import "./component/_tab.css";
 @import "./component/_tag.css";
 
+/* util */
+
+@import "./util/_font.css";
+@import "./util/_text.css";
+
+/* variables */
+
 :root {
-    --main-text:Helvetica;
-    --sub-text:Futura;
-    --main-color: #21ADC7; 
-    --footer-color: #1F8699; 
-    --maintext-color: #262424; 
-    --subpoint-color: #647172; 
-    --border-color:#C7DADD;
+  --main-text: helvetica;
+  --sub-text: futura;
+  --main-color: #21adc7;
+  --main-hover-color: #1f8699;
+  --main-text-highlight-color: #d2fa92;
+  --main-text-color: #262424;
+  --main-text-reverse-color: #fff;
+  --subpoint-color: #647172;
+  --border-color: #c7dadd;
+  --success-color: #a7f8cc;
+  --danger-color: #f1a8a9;
+  --warning-color: #fdeaaa;
+  --info-color: #f4f4f4;
 }

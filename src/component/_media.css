@@ -1,9 +1,11 @@
-.media{
+.media {
   display: flex;
 }
+
 .media-img {
   margin-right: 1em;
-} 
-.media-img-round{
+}
+
+.media-img-round {
   border-radius: 50%;
 }
