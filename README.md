@@ -37,14 +37,20 @@ sea.css uses a basic set of css variables, so you can override the variables def
 
 ```css
 @import url(sea.css)
-
 :root {
-  --main-text:Helvetica;
-  --sub-text:Futura;
-  --main-color: #21ADC7; 
-  --main-text-color: #262424; 
-  --subpoint-color: #647172; 
-  --border-color:#C7DADD;
+  --main-text: helvetica;
+  --sub-text: futura;
+  --main-color: #21adc7;
+  --main-hover-color: #1f8699;
+  --main-text-highlight-color: #d2fa92;
+  --main-text-color: #262424;
+  --main-text-reverse-color: #fff;
+  --subpoint-color: #647172;
+  --border-color: #c7dadd;
+  --success-color: #a7f8cc;
+  --danger-color: #f1a8a9;
+  --warning-color: #fdeaaa;
+  --info-color: #f4f4f4;
 }
 ```
 
