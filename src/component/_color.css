@@ -1,0 +1,87 @@
+.color-main {
+  color: var(--main-color);
+}
+
+.color-hover {
+  color: var(--main-hover-color);
+}
+
+.color-text-highlight {
+  color: var(--main-text-highlight-color);
+}
+
+.color-text {
+  color: var(--main-text-color);
+}
+
+.color-text-reverse {
+  color: var(--main-text-reverse-color);
+}
+
+.color-subpoint {
+  color: var(--subpoint-color);
+}
+
+.color-border {
+  color: var(--border-color);
+}
+
+.color-success {
+  color: var(--success-color);
+}
+
+.color-danger {
+  color: var(--danger-color);
+}
+
+.color-warning {
+  color: var(--warning-color);
+}
+
+.color-info {
+  color: var(--info-color);
+}
+
+.background-color-main {
+  background-color: var(--main-color);
+}
+
+.background-color-hover {
+  background-color: var(--main-hover-color);
+}
+
+.background-color-text-highlight {
+  background-color: var(--main-text-highlight-color);
+}
+
+.background-color-text {
+  background-color: var(--main-text-color);
+}
+
+.background-color-text-reverse {
+  background-color: var(--main-text-reverse-color);
+}
+
+.background-color-subpoint {
+  background-color: var(--subpoint-color);
+}
+
+.background-color-border {
+  background-color: var(--border-color);
+}
+
+.background-color-success {
+  background-color: var(--success-color);
+}
+
+.background-color-danger {
+  background-color: var(--danger-color);
+}
+
+.background-color-warning {
+  background-color: var(--warning-color);
+}
+
+.background-color-info {
+  background-color: var(--info-color);
+}

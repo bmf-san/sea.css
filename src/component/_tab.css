@@ -1,0 +1,36 @@
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-label {
+  border-bottom: solid 0.1rem var(--border-color);
+  color: var(--subpoint-color);
+  font-size: 2rem;
+  margin-bottom: 0;
+  order: -1;
+  padding: 1rem 2rem;
+}
+
+.tab-label:hover {
+  color: var(--main-color);
+}
+
+.col-tab {
+  display: none;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.tab-toggle:checked + .tab-label {
+  border-bottom: solid 0.1rem var(--main-color);
+  color: var(--main-color);
+}
+
+.tab-toggle:checked + .tab-label + .col-tab {
+  display: block;
+}
+
+.tab-toggle {
+  display: none;
+}

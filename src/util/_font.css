@@ -1,0 +1,91 @@
+.font-style-normal {
+  font-style: normal;
+}
+
+.font-style-italic {
+  font-style: italic;
+}
+
+.font-style-oblique {
+  font-style: oblique;
+}
+
+.font-size-small {
+  font-size: small;
+}
+
+.font-size-x-small {
+  font-size: x-small;
+}
+
+.font-size-xx-small {
+  font-size: xx-small;
+}
+
+.font-size-medium {
+  font-size: medium;
+}
+
+.font-size-large {
+  font-size: x-large;
+}
+
+.font-size-x-large {
+  font-size: x-large;
+}
+
+.font-size-xx-large {
+  font-size: xx-large;
+}
+
+.font-weight-normal {
+  font-weight: normal;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-weight-lighter {
+  font-weight: lighter;
+}
+
+.font-weight-bolder {
+  font-weight: bolder;
+}
+
+.font-weight-100 {
+  font-weight: 100;
+}
+
+.font-weight-200 {
+  font-weight: 200;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-800 {
+  font-weight: 800;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}

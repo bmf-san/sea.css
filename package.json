@@ -6,9 +6,7 @@
     "directories": {
         "doc": "docs"
     },
-    "dependencies": {
-        "stylelint": "^13.5.0"
-    },
+    "dependencies": {},
     "devDependencies": {
         "autoprefixer": "^9.8.0",
         "cross-env": "^7.0.2",
@@ -19,6 +17,8 @@
         "postcss-import": "^12.0.1",
         "postcss-sorting": "^5.0.1",
         "rimraf": "^3.0.2",
+        "stylelint": "^13.13.1",
+        "stylelint-config-standard": "^22.0.0",
         "stylelint-order": "^4.0.0"
     },
     "files": [
@@ -27,8 +27,10 @@
         "README.md"
     ],
     "scripts": {
-        "build": "rimraf dist/* && npm-run-all postcss && cross-env NODE_ENV=production postcss ./src/sea.css --ext .min.css --dir=dist/ && gzip -c dist/sea.min.css | wc -c | xargs echo 'Size:'",
-        "postcss": "postcss -c ./postcss.config.js ./src/sea.css -o dist/sea.min.css",
+        "build": "rimraf dist/* && npm-run-all postcss && npm-run-all lint && cross-env NODE_ENV=production postcss ./src/sea.css --ext .min.css --dir=dist/ && gzip -c dist/sea.min.css | wc -c | xargs echo 'Size:'",
+        "build-docs": "rimraf docs/dist/* && npm-run-all postcss && npm-run-all lint && cross-env NODE_ENV=production postcss ./src/sea.css --ext .min.css --dir=docs/dist/ && gzip -c docs/dist/sea.min.css | wc -c | xargs echo 'Size:'",
+        "postcss": "postcss --fix -c ./postcss.config.js ./src/sea.css -o dist/sea.min.css",
+		"lint": "stylelint --fix {src,src/**}/*.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [

@@ -5,20 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article</title>
-    <link rel="stylesheet" href="https://unpkg.com/sea.css/dist/sea.min.css">
+    <link rel="stylesheet" href="dist/sea.min.css">
 </head>
 
 <body>
     <header>
         <div>
             <nav class="nav sp-hidden">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <a class="nav-link-logo"><img src="./image/logo.png" alt="logo"></a>
-                        </div>
-                        <div class="col">
-                            <div class="nav-group">
+                <div class="col-nav">
+                    <div class="nav-left">
+                        <a href="#"><img src="./image/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="nav-right">
+                        <a class="nav-link" href="index.html">Doc</a>
+                        <a class="nav-link" href="top.html">Top</a>
+                        <a class="nav-link" href="list.html">List</a>
+                        <a class="nav-link" href="article.html">Article</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            <nav class="nav pc-hidden">
+                <div class="col-nav">
+                    <div class="nav-left">
+                        <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
+                    </div>
+                    <div class="nav-right">
+                        <div id="nav-sp-drawer">
+                            <input id="nav-sp-input" type="checkbox" class="sp-hidden">
+                            <label id="nav-sp-open" for="nav-sp-input"><span></span></label>
+                            <label class="sp-hidden" id="nav-sp-close" for="nav-sp-input"><span></span></label>
+                            <div id="nav-sp-content">
+                                <h1>Navigation</h1>
                                 <a class="nav-link" href="index.html">Doc</a>
                                 <a class="nav-link" href="top.html">Top</a>
                                 <a class="nav-link" href="list.html">List</a>
@@ -29,40 +47,26 @@
                     </div>
                 </div>
             </nav>
-            <nav class="nav pc-hidden">
-                <a class="nav-link-logo"><img src="./image/logo.png" alt="logo" style="width: 15rem;"></a>
-                <div id="nav-sp-drawer">
-                    <input id="nav-sp-input" type="checkbox" class="sp-hidden">
-                    <label id="nav-sp-open" for="nav-sp-input"><span></span></label>
-                    <label class="sp-hidden" id="nav-sp-close" for="nav-sp-input"><span></span></label>
-                    <div id="nav-sp-content">
-                        <h1>Navigation</h1>
-                        <a class="nav-link" href="index.html">Doc</a>
-                        <a class="nav-link" href="top.html">Top</a>
-                        <a class="nav-link" href="list.html">List</a>
-                        <a class="nav-link" href="article.html">Article</a>
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </div>
-                </div>
-            </nav>
     </header>
 
-    <div class="headline">
-        <div class="row">
-            <div class="column">
-                <img src="./image/sea.JPG" alt="image" style="height: 400px;">
+
+    <div class="headline background-color-main">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 style="text-align: center; color: #fff;">Title</h1>
+                </div>
             </div>
         </div>
     </div>
 
     <section>
-        <div class="container" style="max-width: 640px;">
+        <div class="container-readable margin-top-2rem">
             <div class="row">
-                <div class="column">
+                <div class="col">
                     <span class="tag">Lorem ipsum</span>
                     <span class="tag">Lorem ipsum</span>
                     <span class="tag">Lorem ipsum</span>
-                    <h1>H1 Title</h1>
                     <p><mark>Mark</mark><del>Del</del><u>U</u><small>small</small><strong>Strong</strong><em>em</em><i>italic</i><b>bold</b>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quis reiciendis recusandae minima
                         nobis. Nemo magni nesciunt, ipsam animi, consequuntur est iste dolore facere eaque rem aliquid
@@ -177,13 +181,13 @@ func main() {
                         accusamus ullam ipsam et modi magni animi commodi ab ipsa! Voluptatum ducimus consequatur
                         ratione,
                         aut beatae cupiditate.</p>
-                    <img src="./image/sea.JPG" alt="image" style="width: 600px; height: 300px;">
+                    <img src="./image/logo.png" alt="image" style="width: 600px; height: 300px;">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis autem iste exercitationem
                         laborum
                         tempora dolor cupiditate quidem ducimus numquam nostrum? Obcaecati, iure perferendis cum vitae
                         repellendus explicabo mollitia ipsum beatae.</p>
                     <div class="media">
-                        <img class="media-img" src="./image/sea.JPG" alt="media image"
+                        <img class="media-img" src="./image/logo_mark.png" alt="media image"
                             style="width: 50px; height: 50px;">
                         <p class="media-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque qui a vel,
                             delectus nemo
@@ -204,28 +208,29 @@ func main() {
         </div>
     </section>
 
-    <footer class="sticky-footer" style="margin-top: 3rem;">
-        <div class="headline">
-            <div class="row">
-                <div class="col">
-                    <div style="width: 100%; flex-direction: row; display: flex; justify-content:center; border-bottom: solid 2px #fff; margin: 0 auto;">
-                        <p style="margin-right: 2rem;">
-                            <a style="color: #fff; text-decoration: none;" href="">contents</a>
-                        </p>
-                        <p style="margin-right: 2rem;">
-                            <a style="color: #fff; text-decoration: none;" href="">contact</a>
-                        </p>
-                        <p style="margin-right: 2rem;">
-                            <a style="color: #fff; text-decoration: none;" href="">menu</a>
-                        </p>
-                    </div>
-                    <p style=" font-size: 1.5rem; margin: 0 auto; display: block; text-align: center; padding-top: 1rem;">
-                        <small>SEA.css is licensed MIT.</small>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+	<footer class="sticky-footer margin-top-2rem">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Sticky footer</h1>
+				</div>
+			</div>
+			<div class="row text-align-center">
+				<div class="col">
+					<a class="color-text-reverse" href="#">RSS</a>
+				</div>
+				<div class="col">
+					<a class="color-text-reverse" href="#">Feed</a>
+				</div>
+			</div>
+			<hr>
+			<div class="row text-align-center">
+				<div class="col">
+					<small>SEA.css is licensed MIT.</small>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

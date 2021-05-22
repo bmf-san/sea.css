@@ -20,13 +20,31 @@ commands:
     tool_install:
         steps:
             - run: sudo npm i -g can-npm-publish
+    npm_lint:
+        steps:
+          - checkout
+          - run: npm run lint
+    npm_build:
+        steps:
+          - checkout
+          - run: npm run build
+    npm_build_docs:
+        steps:
+          - checkout
+          - run: npm run build-docs
 jobs:
+    lint:
+      executor: default
+      steps:
+          - npm_install
+          - npm_lint
     publish:
         executor: default
         steps:
             - tool_install
             - npm_install
-            - run: npm run build
+            - npm_build
+            - npm_build_docs
             - run: echo //registry.npmjs.org/:_authToken=${NPM_TOKEN} > .npmrc
             - run:
                 command: |
@@ -37,6 +55,9 @@ jobs:
                     fi
 workflows:
     version: 2
+    lint:
+        jobs:
+          - lint
     publishflow:
         jobs:
             - publish:

@@ -29,7 +29,7 @@ You can install sea.css from npm or yarn
 
 ## CDN
 ```html
-<link rel="stylesheet" href="https://unpkg.com/sea.css/dist/sea.min.css">
+<link rel="stylesheet" href="../dist/sea.min.css">
 ```
 
 # Customizing
@@ -42,8 +42,7 @@ sea.css uses a basic set of css variables, so you can override the variables def
   --main-text:Helvetica;
   --sub-text:Futura;
   --main-color: #21ADC7; 
-  --footer-color: #1F8699; 
-  --maintext-color: #262424; 
+  --main-text-color: #262424; 
   --subpoint-color: #647172; 
   --border-color:#C7DADD;
 }
