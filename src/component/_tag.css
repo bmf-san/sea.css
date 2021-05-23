@@ -13,4 +13,5 @@
 .tag:hover {
   color: #fff;
   background-color: var(--main-color);
+  text-decoration: none;
 }
