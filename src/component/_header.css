@@ -36,13 +36,21 @@
   color: var(--main-text-color);
   font-size: 2rem;
   border-bottom: solid 0.2rem var(--border-color);
-  height: 4.5rem;
-  padding-top: 1.4rem;
+  margin-top: auto;
   margin-right: 4rem;
 }
 
 .nav-link:hover {
   border-bottom: solid 0.2rem var(--main-color);
+}
+
+.nav-link-logo {
+  display: flex;
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: 2rem;
+  margin-top: auto;
+  margin-right: 4rem;
 }
 
 @media screen and (min-width: 770px) {
@@ -164,9 +172,5 @@
     -o-flex-direction: row;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
-  }
-
-  .nav-link-logo {
-    display: inline-block;
   }
 }
