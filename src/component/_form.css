@@ -1,19 +1,21 @@
 input,
 button,
-textarea {
+textarea,
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-form input {
+input,
+select {
   height: 5rem;
   border-radius: 0.3rem;
   background-color: #fff;
   border: 0.1rem solid var(--border-color);
   width: 100%;
   font-size: 1.6rem;
-  padding: 1.6rem;
+  padding: 1rem;
   margin-bottom: 2.2rem;
   -webkit-appearance: none;
   appearance: none;
@@ -25,7 +27,7 @@ textarea {
   font-size: 1em;
   width: 100%;
   padding: 1.6rem;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.2rem;
   border-radius: 0.3rem;
 }
 
@@ -38,7 +40,7 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
-form input:focus {
+input:focus {
   background: #effafc;
   outline: none;
 }
@@ -57,14 +59,6 @@ input:-webkit-autofill:active {
 
 form input-selected {
   background: #fff;
-}
-
-.form_inner {
-  padding: 1em;
-}
-
-.form_input_btm {
-  margin-bottom: 1.2em;
 }
 
 label {
