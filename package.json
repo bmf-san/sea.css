@@ -1,6 +1,6 @@
 {
     "name": "sea.css",
-    "version": "1.0.9",
+    "version": "2.1.0",
     "description": "sea.css is a simple and easy to use css framework.",
     "main": "dist/sea.min.css",
     "directories": {
@@ -30,7 +30,7 @@
         "build": "rimraf dist/* && npm-run-all postcss && npm-run-all lint && cross-env NODE_ENV=production postcss ./src/sea.css --ext .min.css --dir=dist/ && gzip -c dist/sea.min.css | wc -c | xargs echo 'Size:'",
         "build-docs": "rimraf docs/dist/* && npm-run-all postcss && npm-run-all lint && cross-env NODE_ENV=production postcss ./src/sea.css --ext .min.css --dir=docs/dist/ && gzip -c docs/dist/sea.min.css | wc -c | xargs echo 'Size:'",
         "postcss": "postcss --fix -c ./postcss.config.js ./src/sea.css -o dist/sea.min.css",
-		"lint": "stylelint --fix {src,src/**}/*.css",
+        "lint": "stylelint --fix {src,src/**}/*.css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
