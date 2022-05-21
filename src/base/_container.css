@@ -2,7 +2,7 @@
   flex-grow: 1;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 @media screen and (min-width: 770px) {
@@ -30,6 +30,8 @@
   margin: 0 auto;
   padding: 2rem 0;
   width: 100%;
+  min-height: 280px;
+  display: flex;
 }
 
 .row {

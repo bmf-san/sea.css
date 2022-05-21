@@ -2,7 +2,7 @@
   color: var(--main-color);
 }
 
-.color-hover {
+.color-main-hover {
   color: var(--main-hover-color);
 }
 
@@ -12,6 +12,10 @@
 
 .color-text {
   color: var(--main-text-color);
+}
+
+.color-text-hover {
+  color: var(--main-text-hover-color);
 }
 
 .color-text-reverse {
@@ -46,7 +50,7 @@
   background-color: var(--main-color);
 }
 
-.background-color-hover {
+.background-color-main-hover {
   background-color: var(--main-hover-color);
 }
 

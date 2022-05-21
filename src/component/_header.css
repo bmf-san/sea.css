@@ -33,21 +33,14 @@
 .nav-link {
   display: flex;
   text-decoration: none;
-  color: var(--main-text-color);
   font-size: 2rem;
-  border-bottom: solid 0.2rem var(--border-color);
   margin-top: auto;
   margin-right: 4rem;
-}
-
-.nav-link:hover {
-  border-bottom: solid 0.2rem var(--main-color);
 }
 
 .nav-link-logo {
   display: flex;
   text-decoration: none;
-  color: var(--main-text-color);
   font-size: 2rem;
   margin-top: auto;
   margin-right: 4rem;
