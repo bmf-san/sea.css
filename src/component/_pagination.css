@@ -30,6 +30,11 @@
   font-size: 1.5rem;
 }
 
+.pagination .pagination-list li .pagination-active {
+  color: var(--main-text-reverse-color);
+  background-color: var(--main-color);
+}
+
 .pagination .pagination-list li a span {
   display: table-cell;
   vertical-align: middle;
