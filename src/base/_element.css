@@ -95,12 +95,12 @@ b {
 }
 
 a {
-  color: var(--main-text-color);
+  color: var(--main-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--main-text-hover-color);
+  color: var(--main-hover-color);
   text-decoration: none;
   cursor: pointer;
 }
