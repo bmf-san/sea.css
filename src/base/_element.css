@@ -151,7 +151,7 @@ pre code {
 pre {
   background: #eaf2f4;
   padding: 1.25rem 1.5rem;
-  white-space: pre;
+  white-space: pre-wrap;
   word-wrap: normal;
   word-break: break-all;
 }
