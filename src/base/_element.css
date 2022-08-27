@@ -153,6 +153,7 @@ pre {
   padding: 1.25rem 1.5rem;
   white-space: pre;
   word-wrap: normal;
+  word-break: break-all;
 }
 
 hr {

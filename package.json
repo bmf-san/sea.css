@@ -1,6 +1,6 @@
 {
     "name": "sea.css",
-    "version": "2.4.2",
+    "version": "2.4.3",
     "description": "sea.css is a simple and easy to use css framework.",
     "main": "dist/sea.min.css",
     "directories": {
