@@ -29,7 +29,7 @@ You can install sea.css from npm or yarn
 
 ## CDN
 ```html
-<link rel="stylesheet" href="../dist/sea.min.css">
+<link rel="stylesheet" href="https://unpkg.com/sea.css/dist/sea.min.css">
 ```
 
 # Customizing
