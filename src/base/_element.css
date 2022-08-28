@@ -154,6 +154,18 @@ pre {
   white-space: pre-wrap;
   word-wrap: normal;
   word-break: break-all;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 770px) {
+  pre {
+    background: #eaf2f4;
+    padding: 1.25rem 1.5rem;
+    white-space: pre-wrap;
+    word-wrap: normal;
+    word-break: break-all;
+    font-size: 1rem;
+  }
 }
 
 hr {
